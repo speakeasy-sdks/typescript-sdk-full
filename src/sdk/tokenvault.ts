@@ -43,9 +43,7 @@ export class TokenVault {
             "/customers/{customer_id}/instruments/{instrument_id}",
             req
         );
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 
@@ -131,9 +129,7 @@ export class TokenVault {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/customers/{customer_id}/instruments", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
         headers["Accept"] = "application/json";
@@ -227,9 +223,7 @@ export class TokenVault {
             "/customers/{customer_id}/instruments/{instrument_id}/cryptogram",
             req
         );
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 
@@ -315,9 +309,7 @@ export class TokenVault {
             "/customers/{customer_id}/instruments/{instrument_id}",
             req
         );
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 

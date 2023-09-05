@@ -53,9 +53,7 @@ export class SoftPOS {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = {
             ...utils.getHeadersFromRequest(req),
             ...reqBodyHeaders,
@@ -130,9 +128,7 @@ export class SoftPOS {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/terminal/{terminal_phone_no}", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 

@@ -35,9 +35,7 @@ export class Settlements {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/orders/{order_id}/settlements", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 
@@ -136,9 +134,7 @@ export class Settlements {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = {
             ...utils.getHeadersFromRequest(req),
             ...reqBodyHeaders,

@@ -49,9 +49,7 @@ export class Refunds {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = {
             ...utils.getHeadersFromRequest(req),
             ...reqBodyHeaders,
@@ -145,9 +143,7 @@ export class Refunds {
             "/orders/{order_id}/refunds/{refund_id}",
             req
         );
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 
@@ -232,9 +228,7 @@ export class Refunds {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/orders/{order_id}/refunds", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
         headers["Accept"] = "application/json";
 
