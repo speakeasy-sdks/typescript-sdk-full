@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * OK
- */
 export class TerminalDetails extends SpeakeasyBase {
     /**
      * The internal id that you use to map the terminal in your internal system

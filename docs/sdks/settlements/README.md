@@ -18,10 +18,10 @@ import { GetsettlementsResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.settlements.getsettlements({
-  orderId: "repudiandae",
-  xApiVersion: "sint",
-  xClientId: "veritatis",
-  xClientSecret: "itaque",
+  orderId: "nihil",
+  xApiVersion: "praesentium",
+  xClientId: "voluptatibus",
+  xClientSecret: "ipsa",
 }).then((res: GetsettlementsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -58,26 +58,22 @@ sdk.settlements.postSettlements({
   fetchSettlementReconRequest: {
     filters: {
       cfSettlementIds: [
-        318569,
-        9356,
+        604846,
       ],
-      endDate: "est",
+      endDate: "voluptate",
       settlementUtrs: [
-        "explicabo",
-        "deserunt",
-        "distinctio",
-        "quibusdam",
+        "cum",
       ],
-      startDate: "labore",
+      startDate: "perferendis",
     },
     pagination: {
-      cursor: "modi",
-      limit: 183191,
+      cursor: "doloremque",
+      limit: 441711,
     },
   },
-  xApiVersion: "aliquid",
-  xClientId: "cupiditate",
-  xClientSecret: "quos",
+  xApiVersion: "ut",
+  xClientId: "maiores",
+  xClientSecret: "dicta",
 }).then((res: PostSettlementsResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -20,10 +20,10 @@ import { CancelPaymentLinkResponse } from "PG-Latest/dist/sdk/models/operations"
 const sdk = new PGLatest();
 
 sdk.paymentLinks.cancelPaymentLink({
-  linkId: "dolores",
-  xApiVersion: "dolorem",
-  xClientId: "corporis",
-  xClientSecret: "explicabo",
+  linkId: "perferendis",
+  xApiVersion: "ad",
+  xClientId: "natus",
+  xClientSecret: "sed",
 }).then((res: CancelPaymentLinkResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -59,35 +59,35 @@ const sdk = new PGLatest();
 sdk.paymentLinks.createPaymentLink({
   createLinkRequest: {
     customerDetails: {
-      customerEmail: "nobis",
-      customerName: "enim",
-      customerPhone: "omnis",
+      customerEmail: "iste",
+      customerName: "dolor",
+      customerPhone: "natus",
     },
-    linkAmount: 3637.11,
+    linkAmount: 3864.89,
     linkAutoReminders: false,
-    linkCurrency: "minima",
-    linkExpiryTime: "excepturi",
-    linkId: "accusantium",
+    linkCurrency: "hic",
+    linkExpiryTime: "saepe",
+    linkId: "fuga",
     linkMeta: {
-      notifyUrl: "iure",
-      paymentMethods: "culpa",
-      returnUrl: "doloribus",
+      notifyUrl: "in",
+      paymentMethods: "corporis",
+      returnUrl: "iste",
       upiIntent: false,
     },
-    linkMinimumPartialAmount: 9589.5,
+    linkMinimumPartialAmount: 4370.32,
     linkNotes: {
-      "mollitia": "dolorem",
+      "saepe": "quidem",
     },
     linkNotify: {
       sendEmail: false,
       sendSms: false,
     },
     linkPartialPayments: false,
-    linkPurpose: "culpa",
+    linkPurpose: "architecto",
   },
-  xApiVersion: "consequuntur",
-  xClientId: "repellat",
-  xClientSecret: "mollitia",
+  xApiVersion: "ipsa",
+  xClientId: "reiciendis",
+  xClientSecret: "est",
 }).then((res: CreatePaymentLinkResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -121,10 +121,10 @@ import { GetPaymentLinkDetailsResponse } from "PG-Latest/dist/sdk/models/operati
 const sdk = new PGLatest();
 
 sdk.paymentLinks.getPaymentLinkDetails({
-  linkId: "occaecati",
-  xApiVersion: "numquam",
-  xClientId: "commodi",
-  xClientSecret: "quam",
+  linkId: "mollitia",
+  xApiVersion: "laborum",
+  xClientId: "dolores",
+  xClientSecret: "dolorem",
 }).then((res: GetPaymentLinkDetailsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -158,10 +158,10 @@ import { GetPaymentLinkOrdersResponse } from "PG-Latest/dist/sdk/models/operatio
 const sdk = new PGLatest();
 
 sdk.paymentLinks.getPaymentLinkOrders({
-  linkId: "molestiae",
-  xApiVersion: "velit",
-  xClientId: "error",
-  xClientSecret: "quia",
+  linkId: "corporis",
+  xApiVersion: "explicabo",
+  xClientId: "nobis",
+  xClientSecret: "enim",
 }).then((res: GetPaymentLinkOrdersResponse) => {
   if (res.statusCode == 200) {
     // handle response

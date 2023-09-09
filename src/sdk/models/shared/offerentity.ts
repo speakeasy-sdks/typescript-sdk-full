@@ -9,9 +9,6 @@ import { OfferTnc } from "./offertnc";
 import { OfferValidations } from "./offervalidations";
 import { Expose, Type } from "class-transformer";
 
-/**
- * OK
- */
 export class OfferEntity extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "offer_details" })

@@ -46,9 +46,6 @@ export enum RefundsEntityRefundType {
     UnreconciledAutoRefund = "UNRECONCILED_AUTO_REFUND",
 }
 
-/**
- * Refund created
- */
 export class RefundsEntity extends SpeakeasyBase {
     /**
      * Cashfree Payments ID of the payment for which refund is initiated

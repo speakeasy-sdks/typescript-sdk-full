@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * Cannot cancel Payment Link if status is not ACTIVE
- */
 export class LinkCancelledError extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "code" })

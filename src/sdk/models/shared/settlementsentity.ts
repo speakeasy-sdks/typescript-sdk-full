@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * OK
- */
 export class SettlementsEntity extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "cf_payment_id" })

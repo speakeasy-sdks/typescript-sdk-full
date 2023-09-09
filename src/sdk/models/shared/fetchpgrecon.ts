@@ -336,9 +336,6 @@ export class FetchPGReconData extends SpeakeasyBase {
     vendorCommission?: number;
 }
 
-/**
- * OK
- */
 export class FetchPGRecon extends SpeakeasyBase {
     /**
      * Specifies from where the next set of settlement details should be fetched.

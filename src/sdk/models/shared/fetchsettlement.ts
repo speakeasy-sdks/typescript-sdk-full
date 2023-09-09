@@ -133,9 +133,6 @@ export class FetchSettlementData extends SpeakeasyBase {
     status?: string;
 }
 
-/**
- * OK
- */
 export class FetchSettlement extends SpeakeasyBase {
     /**
      * Specify a value from where you want to fetch the settlement details in the API call.

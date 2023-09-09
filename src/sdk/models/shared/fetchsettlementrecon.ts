@@ -252,9 +252,6 @@ export class FetchSettlementReconData extends SpeakeasyBase {
     vendorCommission?: number;
 }
 
-/**
- * OK
- */
 export class FetchSettlementRecon extends SpeakeasyBase {
     /**
      * Specifies from where the next set of settlement details should be fetched.

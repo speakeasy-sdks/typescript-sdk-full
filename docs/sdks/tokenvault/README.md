@@ -24,11 +24,11 @@ import { DeleteSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models
 const sdk = new PGLatest();
 
 sdk.tokenVault.deleteSpecificSavedInstrument({
-  customerId: "perferendis",
-  instrumentId: "magni",
-  xApiVersion: "assumenda",
-  xClientId: "ipsam",
-  xClientSecret: "alias",
+  customerId: "corporis",
+  instrumentId: "dolore",
+  xApiVersion: "iusto",
+  xClientId: "dicta",
+  xClientSecret: "harum",
 }).then((res: DeleteSpecificSavedInstrumentResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -62,11 +62,11 @@ import { FetchAllSavedInstrumentsInstrumentType, FetchAllSavedInstrumentsRespons
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchAllSavedInstruments({
-  customerId: "fugit",
+  customerId: "enim",
   instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
-  xApiVersion: "dolorum",
-  xClientId: "excepturi",
-  xClientSecret: "tempora",
+  xApiVersion: "accusamus",
+  xClientId: "commodi",
+  xClientSecret: "repudiandae",
 }).then((res: FetchAllSavedInstrumentsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -100,11 +100,11 @@ import { FetchCryptogramResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchCryptogram({
-  customerId: "facilis",
-  instrumentId: "tempore",
-  xApiVersion: "labore",
-  xClientId: "delectus",
-  xClientSecret: "eum",
+  customerId: "quae",
+  instrumentId: "ipsum",
+  xApiVersion: "quidem",
+  xClientId: "molestias",
+  xClientSecret: "excepturi",
 }).then((res: FetchCryptogramResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -138,11 +138,11 @@ import { FetchSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models/
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchSpecificSavedInstrument({
-  customerId: "non",
-  instrumentId: "eligendi",
-  xApiVersion: "sint",
-  xClientId: "aliquid",
-  xClientSecret: "provident",
+  customerId: "pariatur",
+  instrumentId: "modi",
+  xApiVersion: "praesentium",
+  xClientId: "rem",
+  xClientSecret: "voluptates",
 }).then((res: FetchSpecificSavedInstrumentResponse) => {
   if (res.statusCode == 200) {
     // handle response

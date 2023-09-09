@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * Terminal created
- */
 export class TerminalResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "added_on" })

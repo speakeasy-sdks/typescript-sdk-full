@@ -21,27 +21,22 @@ const sdk = new PGLatest();
 
 sdk.refunds.createrefund({
   createRefundRequest: {
-    refundAmount: 4417.11,
-    refundId: "ut",
-    refundNote: "maiores",
+    refundAmount: 1103.75,
+    refundId: "laborum",
+    refundNote: "animi",
     refundSpeed: CreateRefundRequestRefundSpeed.Standard,
     refundSplits: [
       {
-        amount: 2961.4,
-        percentage: 4808.94,
-        vendorId: "dicta",
-      },
-      {
-        amount: 6886.61,
-        percentage: 3179.83,
-        vendorId: "accusamus",
+        amount: 1381.83,
+        percentage: 7783.46,
+        vendorId: "sequi",
       },
     ],
   },
-  orderId: "commodi",
-  xApiVersion: "repudiandae",
-  xClientId: "quae",
-  xClientSecret: "ipsum",
+  orderId: "tenetur",
+  xApiVersion: "ipsam",
+  xClientId: "id",
+  xClientSecret: "possimus",
 }).then((res: CreaterefundResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -75,11 +70,11 @@ import { GetRefundResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.refunds.getRefund({
-  orderId: "quidem",
-  refundId: "molestias",
-  xApiVersion: "excepturi",
-  xClientId: "pariatur",
-  xClientSecret: "modi",
+  orderId: "aut",
+  refundId: "quasi",
+  xApiVersion: "error",
+  xClientId: "temporibus",
+  xClientSecret: "laborum",
 }).then((res: GetRefundResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -113,10 +108,10 @@ import { GetallrefundsfororderResponse } from "PG-Latest/dist/sdk/models/operati
 const sdk = new PGLatest();
 
 sdk.refunds.getallrefundsfororder({
-  orderId: "praesentium",
-  xApiVersion: "rem",
-  xClientId: "voluptates",
-  xClientSecret: "quasi",
+  orderId: "quasi",
+  xApiVersion: "reiciendis",
+  xClientId: "voluptatibus",
+  xClientSecret: "vero",
 }).then((res: GetallrefundsfororderResponse) => {
   if (res.statusCode == 200) {
     // handle response

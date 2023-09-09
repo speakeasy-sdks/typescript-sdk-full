@@ -21,9 +21,6 @@ export enum FetchAllSavedInstrumentsInstrumentType {
     Card = "card",
 }
 
-/**
- * OK
- */
 export class FetchAllSavedInstruments extends SpeakeasyBase {
     /**
      * cf_payment_id of the successful transaction done while saving instrument

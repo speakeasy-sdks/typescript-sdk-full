@@ -69,7 +69,6 @@ sdk.eligibilityAPIs.eligibilityOffer({
     filters: {
       offerType: [
         OfferType.Cashback,
-        OfferType.Cashback,
       ],
     },
     queries: {
@@ -77,9 +76,9 @@ sdk.eligibilityAPIs.eligibilityOffer({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "debitis",
-  xClientId: "ipsa",
-  xClientSecret: "delectus",
+  xApiVersion: "iure",
+  xClientId: "magnam",
+  xClientSecret: "debitis",
 }).then((res: EligibilityOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -122,9 +121,9 @@ sdk.eligibilityAPIs.eligibilityPaylater({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "tempora",
-  xClientId: "suscipit",
-  xClientSecret: "molestiae",
+  xApiVersion: "ipsa",
+  xClientId: "delectus",
+  xClientSecret: "tempora",
 }).then((res: EligibilityPaylaterResponse) => {
   if (res.statusCode == 200) {
     // handle response

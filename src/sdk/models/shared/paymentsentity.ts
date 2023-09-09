@@ -21,9 +21,6 @@ export enum PaymentsEntityPaymentStatus {
     Pending = "PENDING",
 }
 
-/**
- * OK
- */
 export class PaymentsEntity extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "auth_id" })

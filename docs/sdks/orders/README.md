@@ -22,55 +22,42 @@ const sdk = new PGLatest();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "sapiente",
-      customerBankCode: "quo",
-      customerBankIfsc: "odit",
-      customerEmail: "at",
-      customerId: "at",
-      customerPhone: "maiores",
+      customerBankAccountNumber: "ipsam",
+      customerBankCode: "repellendus",
+      customerBankIfsc: "sapiente",
+      customerEmail: "quo",
+      customerId: "odit",
+      customerPhone: "at",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "molestiae",
+    orderId: "at",
     orderMeta: {
-      notifyUrl: "quod",
-      paymentMethods: "quod",
-      returnUrl: "esse",
+      notifyUrl: "maiores",
+      paymentMethods: "molestiae",
+      returnUrl: "quod",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 7805.29,
-        percentage: 6788.8,
-        vendorId: "dicta",
-      },
-      {
-        amount: 7206.33,
-        percentage: 6399.21,
-        vendorId: "occaecati",
-      },
-      {
-        amount: 1433.53,
-        percentage: 5373.73,
-        vendorId: "hic",
+        amount: 8009.11,
+        percentage: 4614.79,
+        vendorId: "totam",
       },
     ],
     orderTags: {
-      "totam": "beatae",
-      "commodi": "molestiae",
-      "modi": "qui",
-      "impedit": "cum",
+      "porro": "dolorum",
     },
     terminal: {
-      terminalId: "esse",
-      terminalPhoneNo: "ipsum",
-      terminalType: "excepturi",
+      terminalId: "dicta",
+      terminalPhoneNo: "nam",
+      terminalType: "officia",
     },
   },
-  xApiVersion: "aspernatur",
-  xClientId: "perferendis",
-  xClientSecret: "ad",
+  xApiVersion: "occaecati",
+  xClientId: "fugit",
+  xClientSecret: "deleniti",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -104,10 +91,10 @@ import { GetOrderResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.orders.getOrder({
-  orderId: "natus",
-  xApiVersion: "sed",
-  xClientId: "iste",
-  xClientSecret: "dolor",
+  orderId: "hic",
+  xApiVersion: "optio",
+  xClientId: "totam",
+  xClientSecret: "beatae",
 }).then((res: GetOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -153,22 +140,15 @@ sdk.orders.orderPay({
   orderPayRequest: {
     offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
     paymentMethod: {
-      emi: {
-        cardAlias: "laboriosam",
-        cardBankName: CardEMICardBankName.Amex,
-        cardCvv: "saepe",
-        cardExpiryMm: "fuga",
-        cardExpiryYy: "in",
-        cardHolderName: "corporis",
-        cardNumber: "iste",
-        channel: "iure",
-        emiTenure: 902349,
+      netbanking: {
+        channel: "molestiae",
+        netbankingBankCode: 264555,
       },
     },
     paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     saveInstrument: false,
   },
-  xApiVersion: "quidem",
+  xApiVersion: "qui",
 }).then((res: OrderPayResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -204,13 +184,13 @@ const sdk = new PGLatest();
 
 sdk.orders.preauthorization({
   authorizationRequest: {
-    action: AuthorizationRequestAction.Capture,
-    amount: 602.25,
+    action: AuthorizationRequestAction.Void,
+    amount: 7369.18,
   },
-  orderId: "reiciendis",
-  xApiVersion: "est",
-  xClientId: "mollitia",
-  xClientSecret: "laborum",
+  orderId: "esse",
+  xApiVersion: "ipsum",
+  xClientId: "excepturi",
+  xClientSecret: "aspernatur",
 }).then((res: PreauthorizationResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -8,9 +8,6 @@ import { LinkMetaEntity } from "./linkmetaentity";
 import { LinkNotifyEntity } from "./linknotifyentity";
 import { Expose, Type } from "class-transformer";
 
-/**
- * Payment Link created
- */
 export class LinkResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "cf_link_id" })
