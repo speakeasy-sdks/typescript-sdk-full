@@ -1,4 +1,4 @@
-# eligibilityAPIs
+# EligibilityAPIs
 
 ### Available Operations
 

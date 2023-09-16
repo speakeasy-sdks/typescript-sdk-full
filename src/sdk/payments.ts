@@ -158,7 +158,10 @@ export class Payments {
         switch (true) {
             case httpRes?.status == 200:
                 if (utils.matchContentType(contentType, `application/json`)) {
-                    res.getPaymentsfororder200ApplicationJSONOneOf = JSON.parse(decodedRes);
+                    res.paymentsEntity = utils.objectToClass(
+                        JSON.parse(decodedRes),
+                        shared.PaymentsEntity
+                    );
                 } else {
                     throw new errors.SDKError(
                         "unknown content-type received: " + contentType,
