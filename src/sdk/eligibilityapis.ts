@@ -36,7 +36,7 @@ export class EligibilityAPIs {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/eligibility/cardlessemi";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -129,7 +129,7 @@ export class EligibilityAPIs {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/eligibility/offers";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -221,7 +221,7 @@ export class EligibilityAPIs {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/eligibility/paylater";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(

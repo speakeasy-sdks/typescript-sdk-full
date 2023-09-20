@@ -36,7 +36,7 @@ export class Offers {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/offers";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(

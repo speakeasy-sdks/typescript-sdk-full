@@ -121,7 +121,7 @@ export class Settlements {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/settlements";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(

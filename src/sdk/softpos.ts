@@ -40,7 +40,7 @@ export class SoftPOS {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/terminal";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(

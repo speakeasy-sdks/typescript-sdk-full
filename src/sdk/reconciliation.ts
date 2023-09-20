@@ -36,7 +36,7 @@ export class Reconciliation {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/recon";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -140,7 +140,7 @@ export class Reconciliation {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/settlement/recon";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
