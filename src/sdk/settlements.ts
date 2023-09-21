@@ -7,7 +7,7 @@ import * as errors from "./models/errors";
 import * as operations from "./models/operations";
 import * as shared from "./models/shared";
 import { SDKConfiguration } from "./sdk";
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
 export class Settlements {
     private sdkConfiguration: SDKConfiguration;
@@ -36,7 +36,10 @@ export class Settlements {
         );
         const url: string = utils.generateURL(baseURL, "/orders/{order_id}/settlements", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
+        const headers: RawAxiosRequestHeaders = {
+            ...utils.getHeadersFromRequest(req),
+            ...config?.headers,
+        };
         headers["Accept"] = "application/json";
 
         headers[
@@ -135,7 +138,7 @@ export class Settlements {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = {
+        const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
             ...reqBodyHeaders,
             ...config?.headers,

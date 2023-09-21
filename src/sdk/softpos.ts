@@ -7,7 +7,7 @@ import * as errors from "./models/errors";
 import * as operations from "./models/operations";
 import * as shared from "./models/shared";
 import { SDKConfiguration } from "./sdk";
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
 /**
  * softPOS' agent and order management system now supported by APIs
@@ -54,7 +54,7 @@ export class SoftPOS {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = {
+        const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
             ...reqBodyHeaders,
             ...config?.headers,
@@ -129,7 +129,10 @@ export class SoftPOS {
         );
         const url: string = utils.generateURL(baseURL, "/terminal/{terminal_phone_no}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
+        const headers: RawAxiosRequestHeaders = {
+            ...utils.getHeadersFromRequest(req),
+            ...config?.headers,
+        };
         headers["Accept"] = "application/json";
 
         headers[

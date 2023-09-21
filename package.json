@@ -1,6 +1,6 @@
 {
   "name": "PG-Latest",
-  "version": "1.11.3",
+  "version": "1.11.4",
   "author": "Cashfree",
   "scripts": {
     "prepare": "tsc --build"

@@ -7,7 +7,7 @@ import * as errors from "./models/errors";
 import * as operations from "./models/operations";
 import * as shared from "./models/shared";
 import { SDKConfiguration } from "./sdk";
-import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
 export class PaymentLinks {
     private sdkConfiguration: SDKConfiguration;
@@ -36,7 +36,10 @@ export class PaymentLinks {
         );
         const url: string = utils.generateURL(baseURL, "/links/{link_id}/cancel", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
+        const headers: RawAxiosRequestHeaders = {
+            ...utils.getHeadersFromRequest(req),
+            ...config?.headers,
+        };
         headers["Accept"] = "application/json";
 
         headers[
@@ -135,7 +138,7 @@ export class PaymentLinks {
             }
         }
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = {
+        const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
             ...reqBodyHeaders,
             ...config?.headers,
@@ -210,7 +213,10 @@ export class PaymentLinks {
         );
         const url: string = utils.generateURL(baseURL, "/links/{link_id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
+        const headers: RawAxiosRequestHeaders = {
+            ...utils.getHeadersFromRequest(req),
+            ...config?.headers,
+        };
         headers["Accept"] = "application/json";
 
         headers[
@@ -281,7 +287,10 @@ export class PaymentLinks {
         );
         const url: string = utils.generateURL(baseURL, "/links/{link_id}/orders", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-        const headers = { ...utils.getHeadersFromRequest(req), ...config?.headers };
+        const headers: RawAxiosRequestHeaders = {
+            ...utils.getHeadersFromRequest(req),
+            ...config?.headers,
+        };
         headers["Accept"] = "application/json";
 
         headers[
