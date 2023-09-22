@@ -23,11 +23,11 @@ const sdk = new PGLatest();
 
 sdk.authentication.otpRequest({
   otpRequest: {
-    action: OTPRequestAction.ResendOtp,
-    otp: "nulla",
+    action: OTPRequestAction.SubmitOtp,
+    otp: "error",
   },
-  paymentId: "corrupti",
-  xApiVersion: "illum",
+  paymentId: "deserunt",
+  xApiVersion: "suscipit",
 }).then((res: OTPRequestResponse) => {
   if (res.statusCode == 200) {
     // handle response

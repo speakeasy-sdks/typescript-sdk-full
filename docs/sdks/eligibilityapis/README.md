@@ -28,9 +28,9 @@ sdk.eligibilityAPIs.eligibilityCardlessEMI({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "vel",
-  xClientId: "error",
-  xClientSecret: "deserunt",
+  xApiVersion: "iure",
+  xClientId: "magnam",
+  xClientSecret: "debitis",
 }).then((res: EligibilityCardlessEMIResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -68,7 +68,7 @@ sdk.eligibilityAPIs.eligibilityOffer({
   eligibilityOffersRequest: {
     filters: {
       offerType: [
-        OfferType.Cashback,
+        OfferType.Discount,
       ],
     },
     queries: {
@@ -76,9 +76,9 @@ sdk.eligibilityAPIs.eligibilityOffer({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "iure",
-  xClientId: "magnam",
-  xClientSecret: "debitis",
+  xApiVersion: "delectus",
+  xClientId: "tempora",
+  xClientSecret: "suscipit",
 }).then((res: EligibilityOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -121,9 +121,9 @@ sdk.eligibilityAPIs.eligibilityPaylater({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "ipsa",
-  xClientId: "delectus",
-  xClientSecret: "tempora",
+  xApiVersion: "molestiae",
+  xClientId: "minus",
+  xClientSecret: "placeat",
 }).then((res: EligibilityPaylaterResponse) => {
   if (res.statusCode == 200) {
     // handle response

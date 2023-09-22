@@ -20,17 +20,17 @@ const sdk = new PGLatest();
 sdk.reconciliation.postRecon({
   fetchPGReconRequest: {
     filters: {
-      endDate: "architecto",
-      startDate: "mollitia",
+      endDate: "vitae",
+      startDate: "laborum",
     },
     pagination: {
-      cursor: "dolorem",
-      limit: 635059,
+      cursor: "animi",
+      limit: 317202,
     },
   },
-  xApiVersion: "consequuntur",
-  xClientId: "repellat",
-  xClientSecret: "mollitia",
+  xApiVersion: "odit",
+  xClientId: "quo",
+  xClientSecret: "sequi",
 }).then((res: PostReconResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -67,22 +67,22 @@ sdk.reconciliation.postSettlementRecon({
   fetchSettlementReconRequest: {
     filters: {
       cfSettlementIds: [
-        581850,
+        949572,
       ],
-      endDate: "numquam",
+      endDate: "ipsam",
       settlementUtrs: [
-        "commodi",
+        "id",
       ],
-      startDate: "quam",
+      startDate: "possimus",
     },
     pagination: {
-      cursor: "molestiae",
-      limit: 244425,
+      cursor: "aut",
+      limit: 97101,
     },
   },
   xApiVersion: "error",
-  xClientId: "quia",
-  xClientSecret: "quis",
+  xClientId: "temporibus",
+  xClientSecret: "laborum",
 }).then((res: PostSettlementReconResponse) => {
   if (res.statusCode == 200) {
     // handle response

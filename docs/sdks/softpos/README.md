@@ -23,13 +23,13 @@ const sdk = new PGLatest();
 
 sdk.softPOS.createTerminals({
   createTerminalRequest: {
-    terminalId: "quasi",
-    terminalName: "repudiandae",
-    terminalPhoneNo: "sint",
+    terminalId: "qui",
+    terminalName: "aliquid",
+    terminalPhoneNo: "cupiditate",
   },
-  xApiVersion: "veritatis",
-  xClientId: "itaque",
-  xClientSecret: "incidunt",
+  xApiVersion: "quos",
+  xClientId: "perferendis",
+  xClientSecret: "magni",
 }).then((res: CreateTerminalsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -63,10 +63,10 @@ import { GetTerminalByMobileNumberResponse } from "PG-Latest/dist/sdk/models/ope
 const sdk = new PGLatest();
 
 sdk.softPOS.getTerminalByMobileNumber({
-  terminalPhoneNo: "enim",
-  xApiVersion: "consequatur",
-  xClientId: "est",
-  xClientSecret: "quibusdam",
+  terminalPhoneNo: "assumenda",
+  xApiVersion: "ipsam",
+  xClientId: "alias",
+  xClientSecret: "fugit",
 }).then((res: GetTerminalByMobileNumberResponse) => {
   if (res.statusCode == 200) {
     // handle response

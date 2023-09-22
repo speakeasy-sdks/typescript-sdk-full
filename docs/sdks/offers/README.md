@@ -27,14 +27,14 @@ sdk.offers.createOffer({
   createOfferBackendRequest: {
     offerDetails: {
       cashbackDetails: {
-        cashbackType: CashbackDetailsCashbackType.Flat,
-        cashbackValue: "molestiae",
-        maxCashbackAmount: "minus",
+        cashbackType: CashbackDetailsCashbackType.Percentage,
+        cashbackValue: "iusto",
+        maxCashbackAmount: "excepturi",
       },
       discountDetails: {
-        discountType: DiscountDetailsDiscountType.Percentage,
-        discountValue: "voluptatum",
-        maxDiscountAmount: "iusto",
+        discountType: DiscountDetailsDiscountType.Flat,
+        discountValue: "recusandae",
+        maxDiscountAmount: "temporibus",
       },
       offerType: OfferDetailsOfferType.DiscountAndCashback,
     },
@@ -46,7 +46,7 @@ sdk.offers.createOffer({
       offerTitle: "Test Offer",
     },
     offerTnc: {
-      offerTncType: OfferTncOfferTncType.Post,
+      offerTncType: OfferTncOfferTncType.Link,
       offerTncValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     offerValidations: {
@@ -59,9 +59,9 @@ sdk.offers.createOffer({
       },
     },
   },
-  xApiVersion: "recusandae",
-  xClientId: "temporibus",
-  xClientSecret: "ab",
+  xApiVersion: "veritatis",
+  xClientId: "deserunt",
+  xClientSecret: "perferendis",
 }).then((res: CreateOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -95,10 +95,10 @@ import { GetOfferResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.offers.getOffer({
-  offerId: "quis",
-  xApiVersion: "veritatis",
-  xClientId: "deserunt",
-  xClientSecret: "perferendis",
+  offerId: "ipsam",
+  xApiVersion: "repellendus",
+  xClientId: "sapiente",
+  xClientSecret: "quo",
 }).then((res: GetOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response

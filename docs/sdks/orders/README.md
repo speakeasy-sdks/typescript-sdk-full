@@ -22,42 +22,42 @@ const sdk = new PGLatest();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "ipsam",
-      customerBankCode: "repellendus",
-      customerBankIfsc: "sapiente",
-      customerEmail: "quo",
-      customerId: "odit",
-      customerPhone: "at",
+      customerBankAccountNumber: "odit",
+      customerBankCode: "at",
+      customerBankIfsc: "at",
+      customerEmail: "maiores",
+      customerId: "molestiae",
+      customerPhone: "quod",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "at",
+    orderId: "quod",
     orderMeta: {
-      notifyUrl: "maiores",
-      paymentMethods: "molestiae",
-      returnUrl: "quod",
+      notifyUrl: "esse",
+      paymentMethods: "totam",
+      returnUrl: "porro",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 8009.11,
-        percentage: 4614.79,
-        vendorId: "totam",
+        amount: 6788.8,
+        percentage: 1182.74,
+        vendorId: "nam",
       },
     ],
     orderTags: {
-      "porro": "dolorum",
+      "officia": "occaecati",
     },
     terminal: {
-      terminalId: "dicta",
-      terminalPhoneNo: "nam",
-      terminalType: "officia",
+      terminalId: "fugit",
+      terminalPhoneNo: "deleniti",
+      terminalType: "hic",
     },
   },
-  xApiVersion: "occaecati",
-  xClientId: "fugit",
-  xClientSecret: "deleniti",
+  xApiVersion: "optio",
+  xClientId: "totam",
+  xClientSecret: "beatae",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -91,10 +91,10 @@ import { GetOrderResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.orders.getOrder({
-  orderId: "hic",
-  xApiVersion: "optio",
-  xClientId: "totam",
-  xClientSecret: "beatae",
+  orderId: "commodi",
+  xApiVersion: "molestiae",
+  xClientId: "modi",
+  xClientSecret: "qui",
 }).then((res: GetOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -140,15 +140,17 @@ sdk.orders.orderPay({
   orderPayRequest: {
     offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
     paymentMethod: {
-      netbanking: {
-        channel: "molestiae",
-        netbankingBankCode: 264555,
+      cardlessEmi: {
+        channel: "cum",
+        emiTenure: 456150,
+        phone: "610.461.6263",
+        provider: CardlessEMIProvider.Kotak,
       },
     },
     paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     saveInstrument: false,
   },
-  xApiVersion: "qui",
+  xApiVersion: "saepe",
 }).then((res: OrderPayResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -185,12 +187,12 @@ const sdk = new PGLatest();
 sdk.orders.preauthorization({
   authorizationRequest: {
     action: AuthorizationRequestAction.Void,
-    amount: 7369.18,
+    amount: 4499.5,
   },
-  orderId: "esse",
-  xApiVersion: "ipsum",
-  xClientId: "excepturi",
-  xClientSecret: "aspernatur",
+  orderId: "corporis",
+  xApiVersion: "iste",
+  xClientId: "iure",
+  xClientSecret: "saepe",
 }).then((res: PreauthorizationResponse) => {
   if (res.statusCode == 200) {
     // handle response

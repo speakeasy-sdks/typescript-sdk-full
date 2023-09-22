@@ -24,11 +24,11 @@ import { DeleteSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models
 const sdk = new PGLatest();
 
 sdk.tokenVault.deleteSpecificSavedInstrument({
-  customerId: "corporis",
-  instrumentId: "dolore",
-  xApiVersion: "iusto",
-  xClientId: "dicta",
-  xClientSecret: "harum",
+  customerId: "praesentium",
+  instrumentId: "rem",
+  xApiVersion: "voluptates",
+  xClientId: "quasi",
+  xClientSecret: "repudiandae",
 }).then((res: DeleteSpecificSavedInstrumentResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -62,11 +62,11 @@ import { FetchAllSavedInstrumentsInstrumentType, FetchAllSavedInstrumentsRespons
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchAllSavedInstruments({
-  customerId: "enim",
+  customerId: "sint",
   instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
-  xApiVersion: "accusamus",
-  xClientId: "commodi",
-  xClientSecret: "repudiandae",
+  xApiVersion: "veritatis",
+  xClientId: "itaque",
+  xClientSecret: "incidunt",
 }).then((res: FetchAllSavedInstrumentsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -100,11 +100,11 @@ import { FetchCryptogramResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchCryptogram({
-  customerId: "quae",
-  instrumentId: "ipsum",
-  xApiVersion: "quidem",
-  xClientId: "molestias",
-  xClientSecret: "excepturi",
+  customerId: "enim",
+  instrumentId: "consequatur",
+  xApiVersion: "est",
+  xClientId: "quibusdam",
+  xClientSecret: "explicabo",
 }).then((res: FetchCryptogramResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -138,11 +138,11 @@ import { FetchSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models/
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchSpecificSavedInstrument({
-  customerId: "pariatur",
-  instrumentId: "modi",
-  xApiVersion: "praesentium",
-  xClientId: "rem",
-  xClientSecret: "voluptates",
+  customerId: "deserunt",
+  instrumentId: "distinctio",
+  xApiVersion: "quibusdam",
+  xClientId: "labore",
+  xClientSecret: "modi",
 }).then((res: FetchSpecificSavedInstrumentResponse) => {
   if (res.statusCode == 200) {
     // handle response
