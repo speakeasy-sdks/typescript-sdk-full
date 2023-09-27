@@ -44,64 +44,64 @@ sdk.authentication.otpRequest({
 ## Available Resources and Operations
 
 
-### [Authentication](docs/sdks/authentication/README.md)
+### [authentication](docs/sdks/authentication/README.md)
 
 * [otpRequest](docs/sdks/authentication/README.md#otprequest) - Submit or Resend OTP
 
-### [EligibilityAPIs](docs/sdks/eligibilityapis/README.md)
+### [eligibilityAPIs](docs/sdks/eligibilityapis/README.md)
 
 * [eligibilityCardlessEMI](docs/sdks/eligibilityapis/README.md#eligibilitycardlessemi) - Get eligible Cardless EMI
 * [eligibilityOffer](docs/sdks/eligibilityapis/README.md#eligibilityoffer) - Get eligible Offers
 * [eligibilityPaylater](docs/sdks/eligibilityapis/README.md#eligibilitypaylater) - Get eligible Paylater
 
-### [Offers](docs/sdks/offers/README.md)
+### [offers](docs/sdks/offers/README.md)
 
 * [createOffer](docs/sdks/offers/README.md#createoffer) - Create Offer
 * [getOffer](docs/sdks/offers/README.md#getoffer) - Get Offer by ID
 
-### [Orders](docs/sdks/orders/README.md)
+### [orders](docs/sdks/orders/README.md)
 
 * [createOrder](docs/sdks/orders/README.md#createorder) - Create Order
 * [getOrder](docs/sdks/orders/README.md#getorder) - Get Order
 * [orderPay](docs/sdks/orders/README.md#orderpay) - Order Pay
 * [preauthorization](docs/sdks/orders/README.md#preauthorization) - Preauthorization
 
-### [PaymentLinks](docs/sdks/paymentlinks/README.md)
+### [paymentLinks](docs/sdks/paymentlinks/README.md)
 
 * [cancelPaymentLink](docs/sdks/paymentlinks/README.md#cancelpaymentlink) - Cancel Payment Link
 * [createPaymentLink](docs/sdks/paymentlinks/README.md#createpaymentlink) - Create Payment Link
 * [getPaymentLinkDetails](docs/sdks/paymentlinks/README.md#getpaymentlinkdetails) - Fetch Payment Link Details
 * [getPaymentLinkOrders](docs/sdks/paymentlinks/README.md#getpaymentlinkorders) - Get Orders for a Payment Link
 
-### [Payments](docs/sdks/payments/README.md)
+### [payments](docs/sdks/payments/README.md)
 
 * [getPaymentbyId](docs/sdks/payments/README.md#getpaymentbyid) - Get Payment by ID
 * [getPaymentsfororder](docs/sdks/payments/README.md#getpaymentsfororder) - Get Payments for an Order
 
-### [Reconciliation](docs/sdks/reconciliation/README.md)
+### [reconciliation](docs/sdks/reconciliation/README.md)
 
 * [postRecon](docs/sdks/reconciliation/README.md#postrecon) - PG Reconciliation
 * [postSettlementRecon](docs/sdks/reconciliation/README.md#postsettlementrecon) - Settlement Reconciliation
 
-### [Refunds](docs/sdks/refunds/README.md)
+### [refunds](docs/sdks/refunds/README.md)
 
 * [createrefund](docs/sdks/refunds/README.md#createrefund) - Create Refund
 * [getRefund](docs/sdks/refunds/README.md#getrefund) - Get Refund
 * [getallrefundsfororder](docs/sdks/refunds/README.md#getallrefundsfororder) - Get All Refunds for an Order
 
-### [Settlements](docs/sdks/settlements/README.md)
+### [settlements](docs/sdks/settlements/README.md)
 
 * [getsettlements](docs/sdks/settlements/README.md#getsettlements) - Get Settlements by Order ID
 * [postSettlements](docs/sdks/settlements/README.md#postsettlements) - Get All Settlements
 
-### [TokenVault](docs/sdks/tokenvault/README.md)
+### [tokenVault](docs/sdks/tokenvault/README.md)
 
 * [deleteSpecificSavedInstrument](docs/sdks/tokenvault/README.md#deletespecificsavedinstrument) - Delete Saved Instrument
 * [fetchAllSavedInstruments](docs/sdks/tokenvault/README.md#fetchallsavedinstruments) - Fetch All Saved Instruments
 * [fetchCryptogram](docs/sdks/tokenvault/README.md#fetchcryptogram) - Fetch cryptogram for saved instrument
 * [fetchSpecificSavedInstrument](docs/sdks/tokenvault/README.md#fetchspecificsavedinstrument) - Fetch Single Saved Instrument
 
-### [SoftPOS](docs/sdks/softpos/README.md)
+### [softPOS](docs/sdks/softpos/README.md)
 
 * [createTerminals](docs/sdks/softpos/README.md#createterminals) - Create Terminal
 * [getTerminalByMobileNumber](docs/sdks/softpos/README.md#getterminalbymobilenumber) - Get terminal status using phone number
