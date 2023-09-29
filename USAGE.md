@@ -10,11 +10,11 @@ const sdk = new PGLatest();
 
 sdk.authentication.otpRequest({
   otpRequest: {
-    action: OTPRequestAction.ResendOtp,
-    otp: "provident",
+    action: OTPRequestAction.SubmitOtp,
+    otp: "Tricycle pace",
   },
-  paymentId: "distinctio",
-  xApiVersion: "quibusdam",
+  paymentId: "Nobelium Planner",
+  xApiVersion: "babyish Toys",
 }).then((res: OTPRequestResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -19,11 +19,11 @@ import { GetPaymentbyIdResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.payments.getPaymentbyId({
-  cfPaymentId: 581850,
-  orderId: "numquam",
-  xApiVersion: "commodi",
-  xClientId: "quam",
-  xClientSecret: "molestiae",
+  cfPaymentId: 310675,
+  orderId: "coulomb",
+  xApiVersion: "Solutions",
+  xClientId: "Surinam Centreville Berkshire",
+  xClientSecret: "Consultant Southwest",
 }).then((res: GetPaymentbyIdResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -57,10 +57,10 @@ import { GetPaymentsfororderResponse } from "PG-Latest/dist/sdk/models/operation
 const sdk = new PGLatest();
 
 sdk.payments.getPaymentsfororder({
-  orderId: "velit",
-  xApiVersion: "error",
-  xClientId: "quia",
-  xClientSecret: "quis",
+  orderId: "female indexing",
+  xApiVersion: "Convertible Regional SAS",
+  xClientId: "Salad",
+  xClientSecret: "copying Daniel",
 }).then((res: GetPaymentsfororderResponse) => {
   if (res.statusCode == 200) {
     // handle response

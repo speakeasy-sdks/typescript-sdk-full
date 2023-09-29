@@ -19,10 +19,10 @@ import { GetsettlementsResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.settlements.getsettlements({
-  orderId: "dicta",
-  xApiVersion: "harum",
-  xClientId: "enim",
-  xClientSecret: "accusamus",
+  orderId: "Liaison",
+  xApiVersion: "Lawrencium aggregate black",
+  xClientId: "Kids sole",
+  xClientSecret: "Modern Corporate redouble",
 }).then((res: GetsettlementsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -59,22 +59,22 @@ sdk.settlements.postSettlements({
   fetchSettlementReconRequest: {
     filters: {
       cfSettlementIds: [
-        414263,
+        297769,
       ],
-      endDate: "repudiandae",
+      endDate: "provided",
       settlementUtrs: [
-        "quae",
+        "Interactions",
       ],
-      startDate: "ipsum",
+      startDate: "Bedfordshire Planner Representative",
     },
     pagination: {
-      cursor: "quidem",
-      limit: 565189,
+      cursor: "program Senior",
+      limit: 325622,
     },
   },
-  xApiVersion: "excepturi",
-  xClientId: "pariatur",
-  xClientSecret: "modi",
+  xApiVersion: "generate Abbie South",
+  xClientId: "incidentally up",
+  xClientSecret: "Account Northwest",
 }).then((res: PostSettlementsResponse) => {
   if (res.statusCode == 200) {
     // handle response

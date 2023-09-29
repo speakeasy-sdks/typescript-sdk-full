@@ -25,11 +25,11 @@ import { DeleteSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models
 const sdk = new PGLatest();
 
 sdk.tokenVault.deleteSpecificSavedInstrument({
-  customerId: "praesentium",
-  instrumentId: "rem",
-  xApiVersion: "voluptates",
-  xClientId: "quasi",
-  xClientSecret: "repudiandae",
+  customerId: "as",
+  instrumentId: "Bentley",
+  xApiVersion: "azure improbable Nickel",
+  xClientId: "where Soul budgetary",
+  xClientSecret: "scratch",
 }).then((res: DeleteSpecificSavedInstrumentResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -63,11 +63,11 @@ import { FetchAllSavedInstrumentsInstrumentType, FetchAllSavedInstrumentsRespons
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchAllSavedInstruments({
-  customerId: "sint",
+  customerId: "Internal",
   instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
-  xApiVersion: "veritatis",
-  xClientId: "itaque",
-  xClientSecret: "incidunt",
+  xApiVersion: "array",
+  xClientId: "aggravate Wooden black",
+  xClientSecret: "Berkshire yahoo quo",
 }).then((res: FetchAllSavedInstrumentsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -101,11 +101,11 @@ import { FetchCryptogramResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchCryptogram({
-  customerId: "enim",
-  instrumentId: "consequatur",
-  xApiVersion: "est",
-  xClientId: "quibusdam",
-  xClientSecret: "explicabo",
+  customerId: "Northwest Touring overbook",
+  instrumentId: "lest",
+  xApiVersion: "distil",
+  xClientId: "hacking Van Checking",
+  xClientSecret: "collaborative",
 }).then((res: FetchCryptogramResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -139,11 +139,11 @@ import { FetchSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models/
 const sdk = new PGLatest();
 
 sdk.tokenVault.fetchSpecificSavedInstrument({
-  customerId: "deserunt",
-  instrumentId: "distinctio",
-  xApiVersion: "quibusdam",
-  xClientId: "labore",
-  xClientSecret: "modi",
+  customerId: "excluding Diesel perspiciatis",
+  instrumentId: "tan male",
+  xApiVersion: "eaque empower",
+  xClientId: "Auto siemens Altoona",
+  xClientSecret: "Minivan",
 }).then((res: FetchSpecificSavedInstrumentResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -23,42 +23,42 @@ const sdk = new PGLatest();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "odit",
-      customerBankCode: "at",
-      customerBankIfsc: "at",
-      customerEmail: "maiores",
-      customerId: "molestiae",
-      customerPhone: "quod",
+      customerBankAccountNumber: "North double",
+      customerBankCode: "spherical woman burdensome",
+      customerBankIfsc: "interfaces Smart",
+      customerEmail: "Doyle brown toast",
+      customerId: "Bedfordshire",
+      customerPhone: "Mohr North",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "quod",
+    orderId: "deploy South",
     orderMeta: {
-      notifyUrl: "esse",
-      paymentMethods: "totam",
-      returnUrl: "porro",
+      notifyUrl: "Road male Berkshire",
+      paymentMethods: "parsing female middleware",
+      returnUrl: "Bedfordshire navigating",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 6788.8,
-        percentage: 1182.74,
-        vendorId: "nam",
+        amount: 5942.72,
+        percentage: 3302.96,
+        vendorId: "dearly remount",
       },
     ],
     orderTags: {
-      "officia": "occaecati",
+      "expedita": "South",
     },
     terminal: {
-      terminalId: "fugit",
-      terminalPhoneNo: "deleniti",
-      terminalType: "hic",
+      terminalId: "Southwest",
+      terminalPhoneNo: "violet Chips Porsche",
+      terminalType: "mobile",
     },
   },
-  xApiVersion: "optio",
-  xClientId: "totam",
-  xClientSecret: "beatae",
+  xApiVersion: "ROI bypassing vero",
+  xClientId: "Solutions Ferrari Accountability",
+  xClientSecret: "Folk ampere",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -92,10 +92,10 @@ import { GetOrderResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.orders.getOrder({
-  orderId: "commodi",
-  xApiVersion: "molestiae",
-  xClientId: "modi",
-  xClientSecret: "qui",
+  orderId: "facilitate male Customer",
+  xApiVersion: "lavender",
+  xClientId: "concept phrasing Bicycle",
+  xClientSecret: "Facilitator Danville",
 }).then((res: GetOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -142,16 +142,16 @@ sdk.orders.orderPay({
     offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
     paymentMethod: {
       cardlessEmi: {
-        channel: "cum",
-        emiTenure: 456150,
-        phone: "610.461.6263",
-        provider: CardlessEMIProvider.Kotak,
+        channel: "volt",
+        emiTenure: 272003,
+        phone: "895-935-3255",
+        provider: CardlessEMIProvider.Idfc,
       },
     },
     paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     saveInstrument: false,
   },
-  xApiVersion: "saepe",
+  xApiVersion: "Assistant",
 }).then((res: OrderPayResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -188,12 +188,12 @@ const sdk = new PGLatest();
 sdk.orders.preauthorization({
   authorizationRequest: {
     action: AuthorizationRequestAction.Void,
-    amount: 4499.5,
+    amount: 1985.64,
   },
-  orderId: "corporis",
-  xApiVersion: "iste",
-  xClientId: "iure",
-  xClientSecret: "saepe",
+  orderId: "Celsius cum Tricycle",
+  xApiVersion: "than",
+  xClientId: "illo Cuban Loan",
+  xClientSecret: "partial",
 }).then((res: PreauthorizationResponse) => {
   if (res.statusCode == 200) {
     // handle response

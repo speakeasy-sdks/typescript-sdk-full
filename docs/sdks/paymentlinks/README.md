@@ -21,10 +21,10 @@ import { CancelPaymentLinkResponse } from "PG-Latest/dist/sdk/models/operations"
 const sdk = new PGLatest();
 
 sdk.paymentLinks.cancelPaymentLink({
-  linkId: "quidem",
-  xApiVersion: "architecto",
-  xClientId: "ipsa",
-  xClientSecret: "reiciendis",
+  linkId: "Mercury Michel",
+  xApiVersion: "yellow",
+  xClientId: "Draper sweltering Diesel",
+  xClientSecret: "Maine",
 }).then((res: CancelPaymentLinkResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -60,35 +60,35 @@ const sdk = new PGLatest();
 sdk.paymentLinks.createPaymentLink({
   createLinkRequest: {
     customerDetails: {
-      customerEmail: "est",
-      customerName: "mollitia",
-      customerPhone: "laborum",
+      customerEmail: "grin Fort",
+      customerName: "Licensed",
+      customerPhone: "firewall Bicycle Jordan",
     },
-    linkAmount: 1709.09,
+    linkAmount: 4444.02,
     linkAutoReminders: false,
-    linkCurrency: "dolorem",
-    linkExpiryTime: "corporis",
-    linkId: "explicabo",
+    linkCurrency: "reintermediate",
+    linkExpiryTime: "Forward Reggae Designer",
+    linkId: "fuga flexibility",
     linkMeta: {
-      notifyUrl: "nobis",
-      paymentMethods: "enim",
-      returnUrl: "omnis",
+      notifyUrl: "female",
+      paymentMethods: "Northeast Blues Communications",
+      returnUrl: "SUV Smart Clothing",
       upiIntent: false,
     },
-    linkMinimumPartialAmount: 3637.11,
+    linkMinimumPartialAmount: 7331.25,
     linkNotes: {
-      "minima": "excepturi",
+      "quia": "Bermuda",
     },
     linkNotify: {
       sendEmail: false,
       sendSms: false,
     },
     linkPartialPayments: false,
-    linkPurpose: "accusantium",
+    linkPurpose: "brr Account",
   },
-  xApiVersion: "iure",
-  xClientId: "culpa",
-  xClientSecret: "doloribus",
+  xApiVersion: "Colombia",
+  xClientId: "firewall Bicycle Ferry",
+  xClientSecret: "static",
 }).then((res: CreatePaymentLinkResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -122,10 +122,10 @@ import { GetPaymentLinkDetailsResponse } from "PG-Latest/dist/sdk/models/operati
 const sdk = new PGLatest();
 
 sdk.paymentLinks.getPaymentLinkDetails({
-  linkId: "sapiente",
-  xApiVersion: "architecto",
-  xClientId: "mollitia",
-  xClientSecret: "dolorem",
+  linkId: "Bayamon male Northwest",
+  xApiVersion: "regional Hybrid ew",
+  xClientId: "Operative",
+  xClientSecret: "migrate Southwest",
 }).then((res: GetPaymentLinkDetailsResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -159,10 +159,10 @@ import { GetPaymentLinkOrdersResponse } from "PG-Latest/dist/sdk/models/operatio
 const sdk = new PGLatest();
 
 sdk.paymentLinks.getPaymentLinkOrders({
-  linkId: "culpa",
-  xApiVersion: "consequuntur",
-  xClientId: "repellat",
-  xClientSecret: "mollitia",
+  linkId: "North sophomore",
+  xApiVersion: "Supervisor sue Tunnel",
+  xClientId: "Account",
+  xClientSecret: "Ferrari South Beauty",
 }).then((res: GetPaymentLinkOrdersResponse) => {
   if (res.statusCode == 200) {
     // handle response

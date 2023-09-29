@@ -29,9 +29,9 @@ sdk.eligibilityAPIs.eligibilityCardlessEMI({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "iure",
-  xClientId: "magnam",
-  xClientSecret: "debitis",
+  xApiVersion: "Handmade",
+  xClientId: "Principal",
+  xClientSecret: "South male Boulder",
 }).then((res: EligibilityCardlessEMIResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,7 +69,7 @@ sdk.eligibilityAPIs.eligibilityOffer({
   eligibilityOffersRequest: {
     filters: {
       offerType: [
-        OfferType.Discount,
+        OfferType.Cashback,
       ],
     },
     queries: {
@@ -77,9 +77,9 @@ sdk.eligibilityAPIs.eligibilityOffer({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "delectus",
-  xClientId: "tempora",
-  xClientSecret: "suscipit",
+  xApiVersion: "Electric Planner",
+  xClientId: "invoice female female",
+  xClientSecret: "Washington Facilitator Cadillac",
 }).then((res: EligibilityOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -122,9 +122,9 @@ sdk.eligibilityAPIs.eligibilityPaylater({
       orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
   },
-  xApiVersion: "molestiae",
-  xClientId: "minus",
-  xClientSecret: "placeat",
+  xApiVersion: "generate",
+  xClientId: "Livermorium",
+  xClientSecret: "Christmas",
 }).then((res: EligibilityPaylaterResponse) => {
   if (res.statusCode == 200) {
     // handle response

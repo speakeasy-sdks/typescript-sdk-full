@@ -29,13 +29,13 @@ sdk.offers.createOffer({
     offerDetails: {
       cashbackDetails: {
         cashbackType: CashbackDetailsCashbackType.Percentage,
-        cashbackValue: "iusto",
-        maxCashbackAmount: "excepturi",
+        cashbackValue: "Account viral",
+        maxCashbackAmount: "Planner where",
       },
       discountDetails: {
         discountType: DiscountDetailsDiscountType.Flat,
-        discountValue: "recusandae",
-        maxDiscountAmount: "temporibus",
+        discountValue: "IB West",
+        maxDiscountAmount: "mouton openly Electric",
       },
       offerType: OfferDetailsOfferType.DiscountAndCashback,
     },
@@ -47,7 +47,7 @@ sdk.offers.createOffer({
       offerTitle: "Test Offer",
     },
     offerTnc: {
-      offerTncType: OfferTncOfferTncType.Link,
+      offerTncType: OfferTncOfferTncType.Post,
       offerTncValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     offerValidations: {
@@ -60,9 +60,9 @@ sdk.offers.createOffer({
       },
     },
   },
-  xApiVersion: "veritatis",
-  xClientId: "deserunt",
-  xClientSecret: "perferendis",
+  xApiVersion: "Chief TCP Copernicium",
+  xClientId: "yuck CSS back",
+  xClientSecret: "Southeast College Agent",
 }).then((res: CreateOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -96,10 +96,10 @@ import { GetOfferResponse } from "PG-Latest/dist/sdk/models/operations";
 const sdk = new PGLatest();
 
 sdk.offers.getOffer({
-  offerId: "ipsam",
-  xApiVersion: "repellendus",
-  xClientId: "sapiente",
-  xClientSecret: "quo",
+  offerId: "frankly navigate",
+  xApiVersion: "Electric system kilogram",
+  xClientId: "violet green",
+  xClientSecret: "Idaho",
 }).then((res: GetOfferResponse) => {
   if (res.statusCode == 200) {
     // handle response
