@@ -33,14 +33,14 @@ export class GetPaymentsfororderResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     errorResponse?: shared.ErrorResponse;
 
-    @SpeakeasyMetadata()
-    headers?: Record<string, string[]>;
-
     /**
      * OK
      */
     @SpeakeasyMetadata()
-    paymentsEntity?: shared.PaymentsEntity;
+    getPaymentsfororder200ApplicationJSONOneOf?: any;
+
+    @SpeakeasyMetadata()
+    headers?: Record<string, string[]>;
 
     /**
      * HTTP response status code for this operation
