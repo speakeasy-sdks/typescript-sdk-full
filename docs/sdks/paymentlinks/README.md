@@ -16,20 +16,20 @@ Use this API to cancel a payment link. No further payments can be done against a
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { CancelPaymentLinkResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.paymentLinks.cancelPaymentLink({
-  linkId: "Mercury Michel",
-  xApiVersion: "yellow",
-  xClientId: "Draper sweltering Diesel",
-  xClientSecret: "Maine",
-}).then((res: CancelPaymentLinkResponse) => {
+  const res = await sdk.paymentLinks.cancelPaymentLink({
+    linkId: "Mercury Michel",
+    xClientId: "yellow",
+    xClientSecret: "Draper sweltering Diesel",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -53,47 +53,34 @@ Use this API to create a new payment link. The created payment link url will be 
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { CreatePaymentLinkResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.paymentLinks.createPaymentLink({
-  createLinkRequest: {
-    customerDetails: {
-      customerEmail: "grin Fort",
-      customerName: "Licensed",
-      customerPhone: "firewall Bicycle Jordan",
+  const res = await sdk.paymentLinks.createPaymentLink({
+    createLinkRequest: {
+      customerDetails: {
+        customerPhone: "grin Fort",
+      },
+      linkAmount: 185.31,
+      linkCurrency: "Hybrid",
+      linkId: "synthesizing programming",
+      linkMeta: {},
+      linkNotes: {
+        "key_1": "value_1",
+        "key_2": "value_2",
+      },
+      linkNotify: {},
+      linkPurpose: "Mazda",
     },
-    linkAmount: 4444.02,
-    linkAutoReminders: false,
-    linkCurrency: "reintermediate",
-    linkExpiryTime: "Forward Reggae Designer",
-    linkId: "fuga flexibility",
-    linkMeta: {
-      notifyUrl: "female",
-      paymentMethods: "Northeast Blues Communications",
-      returnUrl: "SUV Smart Clothing",
-      upiIntent: false,
-    },
-    linkMinimumPartialAmount: 7331.25,
-    linkNotes: {
-      "quia": "Bermuda",
-    },
-    linkNotify: {
-      sendEmail: false,
-      sendSms: false,
-    },
-    linkPartialPayments: false,
-    linkPurpose: "brr Account",
-  },
-  xApiVersion: "Colombia",
-  xClientId: "firewall Bicycle Ferry",
-  xClientSecret: "static",
-}).then((res: CreatePaymentLinkResponse) => {
+    xClientId: "Bedfordshire Human",
+    xClientSecret: "plum becquerel",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -117,20 +104,20 @@ Use this API to view all details and status of a payment link.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetPaymentLinkDetailsResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.paymentLinks.getPaymentLinkDetails({
-  linkId: "Bayamon male Northwest",
-  xApiVersion: "regional Hybrid ew",
-  xClientId: "Operative",
-  xClientSecret: "migrate Southwest",
-}).then((res: GetPaymentLinkDetailsResponse) => {
+  const res = await sdk.paymentLinks.getPaymentLinkDetails({
+    linkId: "Bayamon male Northwest",
+    xClientId: "regional Hybrid ew",
+    xClientSecret: "Operative",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -154,20 +141,20 @@ Use this API to view all order details for a payment link.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetPaymentLinkOrdersResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.paymentLinks.getPaymentLinkOrders({
-  linkId: "North sophomore",
-  xApiVersion: "Supervisor sue Tunnel",
-  xClientId: "Account",
-  xClientSecret: "Ferrari South Beauty",
-}).then((res: GetPaymentLinkOrdersResponse) => {
+  const res = await sdk.paymentLinks.getPaymentLinkOrders({
+    linkId: "North sophomore",
+    xClientId: "Supervisor sue Tunnel",
+    xClientSecret: "Account",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

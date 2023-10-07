@@ -15,28 +15,28 @@ Use this API to get eligible Cardless EMI Payment Methods for a customer on an o
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { EligibilityCardlessEMIResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.eligibilityAPIs.eligibilityCardlessEMI({
-  eligibilityCardlessEMIRequest: {
-    queries: {
-      amount: 100,
-      customerDetails: {
-        customerPhone: "9898989898",
+  const res = await sdk.eligibilityAPIs.eligibilityCardlessEMI({
+    eligibilityCardlessEMIRequest: {
+      queries: {
+        amount: 100,
+        customerDetails: {
+          customerPhone: "9898989898",
+        },
+        orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
-      orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
-  },
-  xApiVersion: "Handmade",
-  xClientId: "Principal",
-  xClientSecret: "South male Boulder",
-}).then((res: EligibilityCardlessEMIResponse) => {
+    xClientId: "Handmade",
+    xClientSecret: "Principal",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -60,31 +60,31 @@ Use this API to get eligible offers for an order or amount.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { EligibilityOfferResponse } from "PG-Latest/dist/sdk/models/operations";
 import { OfferType } from "PG-Latest/dist/sdk/models/shared";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.eligibilityAPIs.eligibilityOffer({
-  eligibilityOffersRequest: {
-    filters: {
-      offerType: [
-        OfferType.Cashback,
-      ],
+  const res = await sdk.eligibilityAPIs.eligibilityOffer({
+    eligibilityOffersRequest: {
+      filters: {
+        offerType: [
+          OfferType.Cashback,
+        ],
+      },
+      queries: {
+        amount: 100,
+        orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
+      },
     },
-    queries: {
-      amount: 100,
-      orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
-    },
-  },
-  xApiVersion: "Electric Planner",
-  xClientId: "invoice female female",
-  xClientSecret: "Washington Facilitator Cadillac",
-}).then((res: EligibilityOfferResponse) => {
+    xClientId: "Electric Planner",
+    xClientSecret: "invoice female female",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -108,28 +108,28 @@ Use this API to get eligible Paylater Payment Methods for a customer on an order
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { EligibilityPaylaterResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.eligibilityAPIs.eligibilityPaylater({
-  eligibilityCardlessEMIRequest: {
-    queries: {
-      amount: 100,
-      customerDetails: {
-        customerPhone: "9898989898",
+  const res = await sdk.eligibilityAPIs.eligibilityPaylater({
+    eligibilityCardlessEMIRequest: {
+      queries: {
+        amount: 100,
+        customerDetails: {
+          customerPhone: "9898989898",
+        },
+        orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
-      orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
     },
-  },
-  xApiVersion: "generate",
-  xClientId: "Livermorium",
-  xClientSecret: "Christmas",
-}).then((res: EligibilityPaylaterResponse) => {
+    xClientId: "generate",
+    xClientSecret: "Livermorium",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

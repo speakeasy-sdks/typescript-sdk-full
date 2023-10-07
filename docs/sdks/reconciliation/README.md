@@ -14,29 +14,28 @@ Use this API to get the payment gateway reconciliation details with date range.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { PostReconResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.reconciliation.postRecon({
-  fetchPGReconRequest: {
-    filters: {
-      endDate: "Bentley",
-      startDate: "Bolingbrook Generic",
+  const res = await sdk.reconciliation.postRecon({
+    fetchPGReconRequest: {
+      filters: {
+        endDate: "Bentley",
+        startDate: "Bolingbrook Generic",
+      },
+      pagination: {
+        limit: 405830,
+      },
     },
-    pagination: {
-      cursor: "Shoes framework",
-      limit: 805084,
-    },
-  },
-  xApiVersion: "Liaison",
-  xClientId: "calculating Universal",
-  xClientSecret: "mostly Checking",
-}).then((res: PostReconResponse) => {
+    xClientId: "joule",
+    xClientSecret: "Diesel Liaison",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -60,35 +59,32 @@ Use this API to get settlement reconciliation details using Settlement ID, settl
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { PostSettlementReconResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.reconciliation.postSettlementRecon({
-  fetchSettlementReconRequest: {
-    filters: {
-      cfSettlementIds: [
-        956121,
-      ],
-      endDate: "olive",
-      settlementUtrs: [
-        "Reynolds",
-      ],
-      startDate: "schemas Recumbent API",
+  const res = await sdk.reconciliation.postSettlementRecon({
+    fetchSettlementReconRequest: {
+      filters: {
+        cfSettlementIds: [
+          956121,
+        ],
+        settlementUtrs: [
+          "Buckinghamshire",
+        ],
+      },
+      pagination: {
+        limit: 661166,
+      },
     },
-    pagination: {
-      cursor: "wireless Movies",
-      limit: 781173,
-    },
-  },
-  xApiVersion: "or Bicycle navigate",
-  xClientId: "Agent North",
-  xClientSecret: "Savings",
-}).then((res: PostSettlementReconResponse) => {
+    xClientId: "pro",
+    xClientSecret: "Southeast schemas",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

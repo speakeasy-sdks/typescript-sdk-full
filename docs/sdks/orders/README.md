@@ -16,54 +16,41 @@ Use this API to create orders with Cashfree from your backend and get the paymen
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { CreateOrderResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.orders.createOrder({
-  createOrderBackendRequest: {
-    customerDetails: {
-      customerBankAccountNumber: "North double",
-      customerBankCode: "spherical woman burdensome",
-      customerBankIfsc: "interfaces Smart",
-      customerEmail: "Doyle brown toast",
-      customerId: "Bedfordshire",
-      customerPhone: "Mohr North",
-    },
-    orderAmount: 10.15,
-    orderCurrency: "INR",
-    orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "deploy South",
-    orderMeta: {
-      notifyUrl: "Road male Berkshire",
-      paymentMethods: "parsing female middleware",
-      returnUrl: "Bedfordshire navigating",
-    },
-    orderNote: "Test order",
-    orderSplits: [
-      {
-        amount: 5942.72,
-        percentage: 3302.96,
-        vendorId: "dearly remount",
+  const res = await sdk.orders.createOrder({
+    createOrderBackendRequest: {
+      customerDetails: {
+        customerId: "North double",
+        customerPhone: "spherical woman burdensome",
       },
-    ],
-    orderTags: {
-      "expedita": "South",
+      orderAmount: 10.15,
+      orderCurrency: "INR",
+      orderExpiryTime: "2021-07-29T00:00:00Z",
+      orderMeta: {},
+      orderNote: "Test order",
+      orderSplits: [
+        {},
+      ],
+      orderTags: {
+        "temporibus": "SUV",
+      },
+      terminal: {
+        terminalId: "overriding",
+        terminalPhoneNo: "Southeast Southwest but",
+        terminalType: "Recycled",
+      },
     },
-    terminal: {
-      terminalId: "Southwest",
-      terminalPhoneNo: "violet Chips Porsche",
-      terminalType: "mobile",
-    },
-  },
-  xApiVersion: "ROI bypassing vero",
-  xClientId: "Solutions Ferrari Accountability",
-  xClientSecret: "Folk ampere",
-}).then((res: CreateOrderResponse) => {
+    xClientId: "Orchestrator",
+    xClientSecret: "implement",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -87,20 +74,20 @@ Use this API to view all details of an order.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetOrderResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.orders.getOrder({
-  orderId: "facilitate male Customer",
-  xApiVersion: "lavender",
-  xClientId: "concept phrasing Bicycle",
-  xClientSecret: "Facilitator Danville",
-}).then((res: GetOrderResponse) => {
+  const res = await sdk.orders.getOrder({
+    orderId: "facilitate male Customer",
+    xClientId: "lavender",
+    xClientSecret: "concept phrasing Bicycle",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -124,39 +111,23 @@ Use this API when you have already created the orders and want Cashfree to proce
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { OrderPayResponse } from "PG-Latest/dist/sdk/models/operations";
-import {
-  AppProvider,
-  CardCardBankName,
-  CardChannel,
-  CardEMICardBankName,
-  CardlessEMIProvider,
-  PaylaterProvider,
-  UpiChannel,
-} from "PG-Latest/dist/sdk/models/shared";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.orders.orderPay({
-  orderPayRequest: {
-    offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
-    paymentMethod: {
-      cardlessEmi: {
-        channel: "volt",
-        emiTenure: 272003,
-        phone: "895-935-3255",
-        provider: CardlessEMIProvider.Idfc,
-      },
+  const res = await sdk.orders.orderPay({
+    orderPayRequest: {
+      offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
+      paymentMethod: "candela",
+      paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     },
-    paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
-    saveInstrument: false,
-  },
-  xApiVersion: "Assistant",
-}).then((res: OrderPayResponse) => {
+    xApiVersion: "compressing Islands Rap",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -180,25 +151,22 @@ Use this API to capture or void a preauthorized payment
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { PreauthorizationResponse } from "PG-Latest/dist/sdk/models/operations";
 import { AuthorizationRequestAction } from "PG-Latest/dist/sdk/models/shared";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.orders.preauthorization({
-  authorizationRequest: {
-    action: AuthorizationRequestAction.Void,
-    amount: 1985.64,
-  },
-  orderId: "Celsius cum Tricycle",
-  xApiVersion: "than",
-  xClientId: "illo Cuban Loan",
-  xClientSecret: "partial",
-}).then((res: PreauthorizationResponse) => {
+  const res = await sdk.orders.preauthorization({
+    authorizationRequest: {},
+    orderId: "Clothing Celsius cum",
+    xClientId: "browse than salmon",
+    xClientSecret: "Cuban",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

@@ -15,34 +15,28 @@ Use this API to initiate refunds.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { CreaterefundResponse } from "PG-Latest/dist/sdk/models/operations";
 import { CreateRefundRequestRefundSpeed } from "PG-Latest/dist/sdk/models/shared";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.refunds.createrefund({
-  createRefundRequest: {
-    refundAmount: 567.71,
-    refundId: "overstate Rutherfordium",
-    refundNote: "perferendis Account",
-    refundSpeed: CreateRefundRequestRefundSpeed.Instant,
-    refundSplits: [
-      {
-        amount: 9046.67,
-        percentage: 2487.44,
-        vendorId: "Rubber raccoon Division",
-      },
-    ],
-  },
-  orderId: "alarming back",
-  xApiVersion: "users",
-  xClientId: "Administrator whiteboard",
-  xClientSecret: "Transgender Identity Berkshire",
-}).then((res: CreaterefundResponse) => {
+  const res = await sdk.refunds.createrefund({
+    createRefundRequest: {
+      refundAmount: 567.71,
+      refundId: "overstate Rutherfordium",
+      refundSplits: [
+        {},
+      ],
+    },
+    orderId: "perferendis Account",
+    xClientId: "hence Interactions invoice",
+    xClientSecret: "Division program Miami",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -66,21 +60,21 @@ Use this API to fetch a specific refund processed on your Cashfree Account.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetRefundResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.refunds.getRefund({
-  orderId: "Connecticut East aliquid",
-  refundId: "Chair",
-  xApiVersion: "Elbert Personal Electric",
-  xClientId: "Director Beach Borders",
-  xClientSecret: "networks Electric",
-}).then((res: GetRefundResponse) => {
+  const res = await sdk.refunds.getRefund({
+    orderId: "Connecticut East aliquid",
+    refundId: "Chair",
+    xClientId: "Elbert Personal Electric",
+    xClientSecret: "Director Beach Borders",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -104,20 +98,20 @@ Use this API to fetch all refunds processed against an order.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetallrefundsfororderResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.refunds.getallrefundsfororder({
-  orderId: "trial South",
-  xApiVersion: "Music",
-  xClientId: "Recycled red",
-  xClientSecret: "newton Lodge",
-}).then((res: GetallrefundsfororderResponse) => {
+  const res = await sdk.refunds.getallrefundsfororder({
+    orderId: "trial South",
+    xClientId: "Music",
+    xClientSecret: "Recycled red",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

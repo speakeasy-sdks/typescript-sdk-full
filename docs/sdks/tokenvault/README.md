@@ -20,21 +20,21 @@ To delete a saved instrument for a customer id and instrument id
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { DeleteSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.tokenVault.deleteSpecificSavedInstrument({
-  customerId: "as",
-  instrumentId: "Bentley",
-  xApiVersion: "azure improbable Nickel",
-  xClientId: "where Soul budgetary",
-  xClientSecret: "scratch",
-}).then((res: DeleteSpecificSavedInstrumentResponse) => {
+  const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
+    customerId: "as",
+    instrumentId: "Bentley",
+    xClientId: "azure improbable Nickel",
+    xClientSecret: "where Soul budgetary",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -58,21 +58,22 @@ To get all saved instruments for a customer id
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { FetchAllSavedInstrumentsInstrumentType, FetchAllSavedInstrumentsResponse } from "PG-Latest/dist/sdk/models/operations";
+import { FetchAllSavedInstrumentsInstrumentType } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.tokenVault.fetchAllSavedInstruments({
-  customerId: "Internal",
-  instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
-  xApiVersion: "array",
-  xClientId: "aggravate Wooden black",
-  xClientSecret: "Berkshire yahoo quo",
-}).then((res: FetchAllSavedInstrumentsResponse) => {
+  const res = await sdk.tokenVault.fetchAllSavedInstruments({
+    customerId: "Internal",
+    instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
+    xClientId: "array",
+    xClientSecret: "aggravate Wooden black",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -96,21 +97,21 @@ To get the card network token, token expiry and cryptogram for a saved instrumen
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { FetchCryptogramResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.tokenVault.fetchCryptogram({
-  customerId: "Northwest Touring overbook",
-  instrumentId: "lest",
-  xApiVersion: "distil",
-  xClientId: "hacking Van Checking",
-  xClientSecret: "collaborative",
-}).then((res: FetchCryptogramResponse) => {
+  const res = await sdk.tokenVault.fetchCryptogram({
+    customerId: "Northwest Touring overbook",
+    instrumentId: "lest",
+    xClientId: "distil",
+    xClientSecret: "hacking Van Checking",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -134,21 +135,21 @@ To get specific saved instrument for a customer id and instrument id
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { FetchSpecificSavedInstrumentResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.tokenVault.fetchSpecificSavedInstrument({
-  customerId: "excluding Diesel perspiciatis",
-  instrumentId: "tan male",
-  xApiVersion: "eaque empower",
-  xClientId: "Auto siemens Altoona",
-  xClientSecret: "Minivan",
-}).then((res: FetchSpecificSavedInstrumentResponse) => {
+  const res = await sdk.tokenVault.fetchSpecificSavedInstrument({
+    customerId: "excluding Diesel perspiciatis",
+    instrumentId: "tan male",
+    xClientId: "eaque empower",
+    xClientSecret: "Auto siemens Altoona",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

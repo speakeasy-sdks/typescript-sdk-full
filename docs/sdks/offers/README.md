@@ -14,7 +14,6 @@ Use this API to create offers with Cashfree from your backend
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { CreateOfferResponse } from "PG-Latest/dist/sdk/models/operations";
 import {
   CashbackDetailsCashbackType,
   DiscountDetailsDiscountType,
@@ -22,52 +21,47 @@ import {
   OfferTncOfferTncType,
 } from "PG-Latest/dist/sdk/models/shared";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.offers.createOffer({
-  createOfferBackendRequest: {
-    offerDetails: {
-      cashbackDetails: {
-        cashbackType: CashbackDetailsCashbackType.Percentage,
-        cashbackValue: "Account viral",
-        maxCashbackAmount: "Planner where",
-      },
-      discountDetails: {
-        discountType: DiscountDetailsDiscountType.Flat,
-        discountValue: "IB West",
-        maxDiscountAmount: "mouton openly Electric",
-      },
-      offerType: OfferDetailsOfferType.DiscountAndCashback,
-    },
-    offerMeta: {
-      offerCode: "CFTESTOFFER",
-      offerDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      offerEndTime: "2023-03-29T08:09:51Z",
-      offerStartTime: "2023-03-21T08:09:51Z",
-      offerTitle: "Test Offer",
-    },
-    offerTnc: {
-      offerTncType: OfferTncOfferTncType.Post,
-      offerTncValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    },
-    offerValidations: {
-      maxAllowed: "10",
-      minAmount: "1",
-      paymentMethod: {
-        netbanking: {
-          bankName: "all",
+  const res = await sdk.offers.createOffer({
+    createOfferBackendRequest: {
+      offerDetails: {
+        cashbackDetails: {
+          maxCashbackAmount: "Regional viral",
         },
+        discountDetails: {
+          discountType: DiscountDetailsDiscountType.Percentage,
+          discountValue: "instead Blues where",
+          maxDiscountAmount: "Investment",
+        },
+        offerType: OfferDetailsOfferType.DiscountAndCashback,
+      },
+      offerMeta: {
+        offerCode: "CFTESTOFFER",
+        offerDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        offerEndTime: "2023-03-29T08:09:51Z",
+        offerStartTime: "2023-03-21T08:09:51Z",
+        offerTitle: "Test Offer",
+      },
+      offerTnc: {
+        offerTncType: OfferTncOfferTncType.Link,
+        offerTncValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      },
+      offerValidations: {
+        maxAllowed: "10",
+        minAmount: "1",
+        paymentMethod: "Pound",
       },
     },
-  },
-  xApiVersion: "Chief TCP Copernicium",
-  xClientId: "yuck CSS back",
-  xClientSecret: "Southeast College Agent",
-}).then((res: CreateOfferResponse) => {
+    xClientId: "openly Electric",
+    xClientSecret: "Franc drat now",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -91,20 +85,20 @@ Use this API to get offer by offer_id
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetOfferResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.offers.getOffer({
-  offerId: "frankly navigate",
-  xApiVersion: "Electric system kilogram",
-  xClientId: "violet green",
-  xClientSecret: "Idaho",
-}).then((res: GetOfferResponse) => {
+  const res = await sdk.offers.getOffer({
+    offerId: "frankly navigate",
+    xClientId: "Electric system kilogram",
+    xClientSecret: "violet green",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

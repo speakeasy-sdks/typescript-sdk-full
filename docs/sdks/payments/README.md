@@ -14,21 +14,21 @@ Use this API to view payment details of an order for a payment ID.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetPaymentbyIdResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.payments.getPaymentbyId({
-  cfPaymentId: 310675,
-  orderId: "coulomb",
-  xApiVersion: "Solutions",
-  xClientId: "Surinam Centreville Berkshire",
-  xClientSecret: "Consultant Southwest",
-}).then((res: GetPaymentbyIdResponse) => {
+  const res = await sdk.payments.getPaymentbyId({
+    cfPaymentId: 310675,
+    orderId: "coulomb",
+    xClientId: "Solutions",
+    xClientSecret: "Surinam Centreville Berkshire",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -52,20 +52,20 @@ Use this API to view all payment details for an order.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetPaymentsfororderResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.payments.getPaymentsfororder({
-  orderId: "female indexing",
-  xApiVersion: "Convertible Regional SAS",
-  xClientId: "Salad",
-  xClientSecret: "copying Daniel",
-}).then((res: GetPaymentsfororderResponse) => {
+  const res = await sdk.payments.getPaymentsfororder({
+    orderId: "female indexing",
+    xClientId: "Convertible Regional SAS",
+    xClientSecret: "Salad",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

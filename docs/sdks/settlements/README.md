@@ -14,20 +14,20 @@ Use this API to view all the settlements of a particular order.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetsettlementsResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.settlements.getsettlements({
-  orderId: "Liaison",
-  xApiVersion: "Lawrencium aggregate black",
-  xClientId: "Kids sole",
-  xClientSecret: "Modern Corporate redouble",
-}).then((res: GetsettlementsResponse) => {
+  const res = await sdk.settlements.getsettlements({
+    orderId: "Liaison",
+    xClientId: "Lawrencium aggregate black",
+    xClientSecret: "Kids sole",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -51,35 +51,32 @@ Use this API to get all settlement details by specifying the settlement ID, sett
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { PostSettlementsResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.settlements.postSettlements({
-  fetchSettlementReconRequest: {
-    filters: {
-      cfSettlementIds: [
-        297769,
-      ],
-      endDate: "provided",
-      settlementUtrs: [
-        "Interactions",
-      ],
-      startDate: "Bedfordshire Planner Representative",
+  const res = await sdk.settlements.postSettlements({
+    fetchSettlementReconRequest: {
+      filters: {
+        cfSettlementIds: [
+          297769,
+        ],
+        settlementUtrs: [
+          "Southwest",
+        ],
+      },
+      pagination: {
+        limit: 542580,
+      },
     },
-    pagination: {
-      cursor: "program Senior",
-      limit: 325622,
-    },
-  },
-  xApiVersion: "generate Abbie South",
-  xClientId: "incidentally up",
-  xClientSecret: "Account Northwest",
-}).then((res: PostSettlementsResponse) => {
+    xClientId: "Southwest Stacy Planner",
+    xClientSecret: "length program Senior",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

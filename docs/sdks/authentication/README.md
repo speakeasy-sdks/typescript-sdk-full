@@ -17,23 +17,23 @@ If you accept OTP on your own page, you can use the below API to send OTP to Cas
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { OTPRequestResponse } from "PG-Latest/dist/sdk/models/operations";
 import { OTPRequestAction } from "PG-Latest/dist/sdk/models/shared";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.authentication.otpRequest({
-  otpRequest: {
-    action: OTPRequestAction.SubmitOtp,
-    otp: "Tricycle pace",
-  },
-  paymentId: "Nobelium Planner",
-  xApiVersion: "babyish Toys",
-}).then((res: OTPRequestResponse) => {
+  const res = await sdk.authentication.otpRequest({
+    otpRequest: {
+      action: OTPRequestAction.SubmitOtp,
+      otp: "Tricycle pace",
+    },
+    paymentId: "Nobelium Planner",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

@@ -18,24 +18,23 @@ Use this API to create new terminals to use softPOS.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { CreateTerminalsResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.softPOS.createTerminals({
-  createTerminalRequest: {
-    terminalId: "opium navigating Schaden",
-    terminalName: "parse Branding passage",
-    terminalPhoneNo: "siemens",
-  },
-  xApiVersion: "Account",
-  xClientId: "with",
-  xClientSecret: "ivory scalable Tricycle",
-}).then((res: CreateTerminalsResponse) => {
+  const res = await sdk.softPOS.createTerminals({
+    createTerminalRequest: {
+      terminalName: "opium navigating Schaden",
+      terminalPhoneNo: "parse Branding passage",
+    },
+    xClientId: "siemens",
+    xClientSecret: "Account",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -59,20 +58,20 @@ Use this API to view all details of a terminal.
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { GetTerminalByMobileNumberResponse } from "PG-Latest/dist/sdk/models/operations";
 
-const sdk = new PGLatest();
+(async() => {
+  const sdk = new PGLatest();
 
-sdk.softPOS.getTerminalByMobileNumber({
-  terminalPhoneNo: "coulomb Bedfordshire",
-  xApiVersion: "Producer Trial",
-  xClientId: "Maine Global",
-  xClientSecret: "perspiciatis",
-}).then((res: GetTerminalByMobileNumberResponse) => {
+  const res = await sdk.softPOS.getTerminalByMobileNumber({
+    terminalPhoneNo: "coulomb Bedfordshire",
+    xClientId: "Producer Trial",
+    xClientSecret: "Maine Global",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
