@@ -28,12 +28,12 @@ import {
     createOfferBackendRequest: {
       offerDetails: {
         cashbackDetails: {
-          maxCashbackAmount: "Regional viral",
+          maxCashbackAmount: "string",
         },
         discountDetails: {
           discountType: DiscountDetailsDiscountType.Percentage,
-          discountValue: "instead Blues where",
-          maxDiscountAmount: "Investment",
+          discountValue: "string",
+          maxDiscountAmount: "string",
         },
         offerType: OfferDetailsOfferType.DiscountAndCashback,
       },
@@ -45,17 +45,17 @@ import {
         offerTitle: "Test Offer",
       },
       offerTnc: {
-        offerTncType: OfferTncOfferTncType.Link,
+        offerTncType: OfferTncOfferTncType.Post,
         offerTncValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       },
       offerValidations: {
         maxAllowed: "10",
         minAmount: "1",
-        paymentMethod: "Pound",
+        paymentMethod: "string",
       },
     },
-    xClientId: "openly Electric",
-    xClientSecret: "Franc drat now",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -90,9 +90,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.offers.getOffer({
-    offerId: "frankly navigate",
-    xClientId: "Electric system kilogram",
-    xClientSecret: "violet green",
+    offerId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

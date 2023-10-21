@@ -25,9 +25,9 @@ import { OTPRequestAction } from "PG-Latest/dist/sdk/models/shared";
   const res = await sdk.authentication.otpRequest({
     otpRequest: {
       action: OTPRequestAction.SubmitOtp,
-      otp: "Tricycle pace",
+      otp: "string",
     },
-    paymentId: "Nobelium Planner",
+    paymentId: "string",
   });
 
   if (res.statusCode == 200) {

@@ -24,11 +24,11 @@ import { PGLatest } from "PG-Latest";
 
   const res = await sdk.softPOS.createTerminals({
     createTerminalRequest: {
-      terminalName: "opium navigating Schaden",
-      terminalPhoneNo: "parse Branding passage",
+      terminalName: "string",
+      terminalPhoneNo: "string",
     },
-    xClientId: "siemens",
-    xClientSecret: "Account",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -63,9 +63,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.softPOS.getTerminalByMobileNumber({
-    terminalPhoneNo: "coulomb Bedfordshire",
-    xClientId: "Producer Trial",
-    xClientSecret: "Maine Global",
+    terminalPhoneNo: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

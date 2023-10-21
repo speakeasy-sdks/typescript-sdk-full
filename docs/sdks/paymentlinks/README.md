@@ -21,9 +21,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.paymentLinks.cancelPaymentLink({
-    linkId: "Mercury Michel",
-    xClientId: "yellow",
-    xClientSecret: "Draper sweltering Diesel",
+    linkId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -60,21 +60,21 @@ import { PGLatest } from "PG-Latest";
   const res = await sdk.paymentLinks.createPaymentLink({
     createLinkRequest: {
       customerDetails: {
-        customerPhone: "grin Fort",
+        customerPhone: "string",
       },
-      linkAmount: 185.31,
-      linkCurrency: "Hybrid",
-      linkId: "synthesizing programming",
+      linkAmount: 5411.24,
+      linkCurrency: "string",
+      linkId: "string",
       linkMeta: {},
       linkNotes: {
         "key_1": "value_1",
         "key_2": "value_2",
       },
       linkNotify: {},
-      linkPurpose: "Mazda",
+      linkPurpose: "string",
     },
-    xClientId: "Bedfordshire Human",
-    xClientSecret: "plum becquerel",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -109,9 +109,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.paymentLinks.getPaymentLinkDetails({
-    linkId: "Bayamon male Northwest",
-    xClientId: "regional Hybrid ew",
-    xClientSecret: "Operative",
+    linkId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -146,9 +146,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.paymentLinks.getPaymentLinkOrders({
-    linkId: "North sophomore",
-    xClientId: "Supervisor sue Tunnel",
-    xClientSecret: "Account",
+    linkId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

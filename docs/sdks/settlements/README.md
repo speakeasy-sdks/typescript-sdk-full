@@ -19,9 +19,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.settlements.getsettlements({
-    orderId: "Liaison",
-    xClientId: "Lawrencium aggregate black",
-    xClientSecret: "Kids sole",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -62,15 +62,15 @@ import { PGLatest } from "PG-Latest";
           297769,
         ],
         settlementUtrs: [
-          "Southwest",
+          "string",
         ],
       },
       pagination: {
-        limit: 542580,
+        limit: 116172,
       },
     },
-    xClientId: "Southwest Stacy Planner",
-    xClientSecret: "length program Senior",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

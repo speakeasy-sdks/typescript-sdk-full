@@ -23,14 +23,14 @@ import { CreateRefundRequestRefundSpeed } from "PG-Latest/dist/sdk/models/shared
   const res = await sdk.refunds.createrefund({
     createRefundRequest: {
       refundAmount: 567.71,
-      refundId: "overstate Rutherfordium",
+      refundId: "string",
       refundSplits: [
         {},
       ],
     },
-    orderId: "perferendis Account",
-    xClientId: "hence Interactions invoice",
-    xClientSecret: "Division program Miami",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -65,10 +65,10 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.getRefund({
-    orderId: "Connecticut East aliquid",
-    refundId: "Chair",
-    xClientId: "Elbert Personal Electric",
-    xClientSecret: "Director Beach Borders",
+    orderId: "string",
+    refundId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -103,9 +103,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.getallrefundsfororder({
-    orderId: "trial South",
-    xClientId: "Music",
-    xClientSecret: "Recycled red",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

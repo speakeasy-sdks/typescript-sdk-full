@@ -23,8 +23,8 @@ import { PGLatest } from "PG-Latest";
   const res = await sdk.orders.createOrder({
     createOrderBackendRequest: {
       customerDetails: {
-        customerId: "North double",
-        customerPhone: "spherical woman burdensome",
+        customerId: "string",
+        customerPhone: "string",
       },
       orderAmount: 10.15,
       orderCurrency: "INR",
@@ -35,16 +35,16 @@ import { PGLatest } from "PG-Latest";
         {},
       ],
       orderTags: {
-        "temporibus": "SUV",
+        "key": "string",
       },
       terminal: {
-        terminalId: "overriding",
-        terminalPhoneNo: "Southeast Southwest but",
-        terminalType: "Recycled",
+        terminalId: "string",
+        terminalPhoneNo: "string",
+        terminalType: "string",
       },
     },
-    xClientId: "Orchestrator",
-    xClientSecret: "implement",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -79,9 +79,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.orders.getOrder({
-    orderId: "facilitate male Customer",
-    xClientId: "lavender",
-    xClientSecret: "concept phrasing Bicycle",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -118,10 +118,10 @@ import { PGLatest } from "PG-Latest";
   const res = await sdk.orders.orderPay({
     orderPayRequest: {
       offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
-      paymentMethod: "candela",
+      paymentMethod: "string",
       paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     },
-    xApiVersion: "compressing Islands Rap",
+    xApiVersion: "string",
   });
 
   if (res.statusCode == 200) {
@@ -158,9 +158,9 @@ import { AuthorizationRequestAction } from "PG-Latest/dist/sdk/models/shared";
 
   const res = await sdk.orders.preauthorization({
     authorizationRequest: {},
-    orderId: "Clothing Celsius cum",
-    xClientId: "browse than salmon",
-    xClientSecret: "Cuban",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

@@ -25,10 +25,10 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
-    customerId: "as",
-    instrumentId: "Bentley",
-    xClientId: "azure improbable Nickel",
-    xClientSecret: "where Soul budgetary",
+    customerId: "string",
+    instrumentId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -64,10 +64,10 @@ import { FetchAllSavedInstrumentsInstrumentType } from "PG-Latest/dist/sdk/model
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchAllSavedInstruments({
-    customerId: "Internal",
+    customerId: "string",
     instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
-    xClientId: "array",
-    xClientSecret: "aggravate Wooden black",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -102,10 +102,10 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchCryptogram({
-    customerId: "Northwest Touring overbook",
-    instrumentId: "lest",
-    xClientId: "distil",
-    xClientSecret: "hacking Van Checking",
+    customerId: "string",
+    instrumentId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -140,10 +140,10 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchSpecificSavedInstrument({
-    customerId: "excluding Diesel perspiciatis",
-    instrumentId: "tan male",
-    xClientId: "eaque empower",
-    xClientSecret: "Auto siemens Altoona",
+    customerId: "string",
+    instrumentId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

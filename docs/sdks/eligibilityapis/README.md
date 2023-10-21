@@ -29,8 +29,8 @@ import { PGLatest } from "PG-Latest";
         orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
     },
-    xClientId: "Handmade",
-    xClientSecret: "Principal",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -77,8 +77,8 @@ import { OfferType } from "PG-Latest/dist/sdk/models/shared";
         orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
     },
-    xClientId: "Electric Planner",
-    xClientSecret: "invoice female female",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -122,8 +122,8 @@ import { PGLatest } from "PG-Latest";
         orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
     },
-    xClientId: "generate",
-    xClientSecret: "Livermorium",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

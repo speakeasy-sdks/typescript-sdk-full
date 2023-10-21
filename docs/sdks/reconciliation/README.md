@@ -21,15 +21,15 @@ import { PGLatest } from "PG-Latest";
   const res = await sdk.reconciliation.postRecon({
     fetchPGReconRequest: {
       filters: {
-        endDate: "Bentley",
-        startDate: "Bolingbrook Generic",
+        endDate: "string",
+        startDate: "string",
       },
       pagination: {
-        limit: 405830,
+        limit: 85382,
       },
     },
-    xClientId: "joule",
-    xClientSecret: "Diesel Liaison",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -70,15 +70,15 @@ import { PGLatest } from "PG-Latest";
           956121,
         ],
         settlementUtrs: [
-          "Buckinghamshire",
+          "string",
         ],
       },
       pagination: {
-        limit: 661166,
+        limit: 71166,
       },
     },
-    xClientId: "pro",
-    xClientSecret: "Southeast schemas",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {

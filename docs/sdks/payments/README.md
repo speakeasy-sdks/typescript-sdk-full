@@ -20,9 +20,9 @@ import { PGLatest } from "PG-Latest";
 
   const res = await sdk.payments.getPaymentbyId({
     cfPaymentId: 310675,
-    orderId: "coulomb",
-    xClientId: "Solutions",
-    xClientSecret: "Surinam Centreville Berkshire",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
@@ -57,9 +57,9 @@ import { PGLatest } from "PG-Latest";
   const sdk = new PGLatest();
 
   const res = await sdk.payments.getPaymentsfororder({
-    orderId: "female indexing",
-    xClientId: "Convertible Regional SAS",
-    xClientSecret: "Salad",
+    orderId: "string",
+    xClientId: "string",
+    xClientSecret: "string",
   });
 
   if (res.statusCode == 200) {
