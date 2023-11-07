@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 export class EligibilityOfferRequest extends SpeakeasyBase {
@@ -27,12 +27,6 @@ export class EligibilityOfferResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     contentType: string;
 
-    /**
-     * OK
-     */
-    @SpeakeasyMetadata({ elemType: shared.EligibleOffersEntity })
-    eligibleOffersEntities?: shared.EligibleOffersEntity[];
-
     @SpeakeasyMetadata()
     headers?: Record<string, string[]>;
 
@@ -47,4 +41,10 @@ export class EligibilityOfferResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * OK
+     */
+    @SpeakeasyMetadata({ elemType: shared.EligibleOffersEntity })
+    classes?: shared.EligibleOffersEntity[];
 }

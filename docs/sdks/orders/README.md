@@ -1,5 +1,5 @@
 # Orders
-(*orders*)
+(*.orders*)
 
 ### Available Operations
 
@@ -47,6 +47,7 @@ import { PGLatest } from "PG-Latest";
     xClientSecret: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -83,6 +84,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -124,6 +126,7 @@ import { PGLatest } from "PG-Latest";
     xApiVersion: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -162,6 +165,7 @@ import { AuthorizationRequestAction } from "PG-Latest/dist/sdk/models/shared";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

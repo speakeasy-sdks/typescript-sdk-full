@@ -1,4 +1,4 @@
-# FetchPGReconRequestPagination
+# Pagination
 
 To fetch the next set of settlements, pass the cursor received in the response to the next API call. 
  To receive the data for the first time, pass the cursor as null. 

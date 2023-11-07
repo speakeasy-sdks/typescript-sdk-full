@@ -61,9 +61,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "2022-09-01";
-    sdkVersion = "1.16.0";
-    genVersion = "2.171.0";
-    userAgent = "speakeasy-sdk/typescript 1.16.0 2.171.0 2022-09-01 PG-Latest";
+    sdkVersion = "2.0.0";
+    genVersion = "2.181.1";
+    userAgent = "speakeasy-sdk/typescript 2.0.0 2.181.1 2022-09-01 PG-Latest";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -72,21 +72,21 @@ export class SDKConfiguration {
 
 export class PGLatest {
     /**
-     * The Authentication API allows merchants to show a native screen and capture OTP on their own page and submit to Cashfree. This feature is only available on request.
-     */
-    public authentication: Authentication;
-    public eligibilityAPIs: EligibilityAPIs;
-    public offers: Offers;
-    public orders: Orders;
-    public paymentLinks: PaymentLinks;
-    public payments: Payments;
-    public reconciliation: Reconciliation;
-    public refunds: Refunds;
-    public settlements: Settlements;
-    /**
      * Cashfree's token Vault helps you save cards and tokenize them in a PCI complaint manner. We support creation of network tokens which can be used across acquiring banks
      */
     public tokenVault: TokenVault;
+    public eligibilityAPIs: EligibilityAPIs;
+    public paymentLinks: PaymentLinks;
+    public offers: Offers;
+    public orders: Orders;
+    /**
+     * The Authentication API allows merchants to show a native screen and capture OTP on their own page and submit to Cashfree. This feature is only available on request.
+     */
+    public authentication: Authentication;
+    public payments: Payments;
+    public refunds: Refunds;
+    public settlements: Settlements;
+    public reconciliation: Reconciliation;
     /**
      * softPOS' agent and order management system now supported by APIs
      */
@@ -109,16 +109,16 @@ export class PGLatest {
             retryConfig: props?.retryConfig,
         });
 
-        this.authentication = new Authentication(this.sdkConfiguration);
+        this.tokenVault = new TokenVault(this.sdkConfiguration);
         this.eligibilityAPIs = new EligibilityAPIs(this.sdkConfiguration);
+        this.paymentLinks = new PaymentLinks(this.sdkConfiguration);
         this.offers = new Offers(this.sdkConfiguration);
         this.orders = new Orders(this.sdkConfiguration);
-        this.paymentLinks = new PaymentLinks(this.sdkConfiguration);
+        this.authentication = new Authentication(this.sdkConfiguration);
         this.payments = new Payments(this.sdkConfiguration);
-        this.reconciliation = new Reconciliation(this.sdkConfiguration);
         this.refunds = new Refunds(this.sdkConfiguration);
         this.settlements = new Settlements(this.sdkConfiguration);
-        this.tokenVault = new TokenVault(this.sdkConfiguration);
+        this.reconciliation = new Reconciliation(this.sdkConfiguration);
         this.softPOS = new SoftPOS(this.sdkConfiguration);
     }
 }

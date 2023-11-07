@@ -1,4 +1,4 @@
-# AuthorizationInPaymentsEntityAction
+# Action
 
 One of CAPTURE or VOID
 

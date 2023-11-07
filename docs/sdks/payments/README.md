@@ -1,5 +1,5 @@
 # Payments
-(*payments*)
+(*.payments*)
 
 ### Available Operations
 
@@ -24,6 +24,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -61,6 +62,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

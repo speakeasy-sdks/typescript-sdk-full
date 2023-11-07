@@ -8,7 +8,7 @@ import { Expose } from "class-transformer";
 /**
  * One of CAPTURE or VOID
  */
-export enum AuthorizationInPaymentsEntityAction {
+export enum Action {
     Capture = "CAPTURE",
     Void = "VOID",
 }
@@ -16,7 +16,7 @@ export enum AuthorizationInPaymentsEntityAction {
 /**
  * One of SUCCESS or PENDING
  */
-export enum AuthorizationInPaymentsEntityStatus {
+export enum Status {
     Success = "SUCCESS",
     Pending = "PENDING",
 }
@@ -30,7 +30,7 @@ export class AuthorizationInPaymentsEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "action" })
-    action?: AuthorizationInPaymentsEntityAction;
+    action?: Action;
 
     /**
      * CAPTURE or VOID reference number based on action
@@ -79,5 +79,5 @@ export class AuthorizationInPaymentsEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "status" })
-    status?: AuthorizationInPaymentsEntityStatus;
+    status?: Status;
 }

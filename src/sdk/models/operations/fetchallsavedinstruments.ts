@@ -3,13 +3,13 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 /**
  * type to instrument to query
  */
-export enum FetchAllSavedInstrumentsInstrumentType {
+export enum InstrumentType {
     Card = "card",
 }
 
@@ -21,7 +21,7 @@ export class FetchAllSavedInstrumentsRequest extends SpeakeasyBase {
      * type to instrument to query
      */
     @SpeakeasyMetadata({ data: "queryParam, style=form;explode=true;name=instrument_type" })
-    instrumentType: FetchAllSavedInstrumentsInstrumentType;
+    instrumentType: InstrumentType;
 
     @SpeakeasyMetadata({ data: "header, style=simple;explode=false;name=x-api-version" })
     xApiVersion?: string;
@@ -46,12 +46,6 @@ export class FetchAllSavedInstrumentsResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     errorResponse?: shared.ErrorResponse;
 
-    /**
-     * OK
-     */
-    @SpeakeasyMetadata({ elemType: shared.FetchAllSavedInstruments })
-    fetchAllSavedInstruments?: shared.FetchAllSavedInstruments[];
-
     @SpeakeasyMetadata()
     headers?: Record<string, string[]>;
 
@@ -66,4 +60,10 @@ export class FetchAllSavedInstrumentsResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * OK
+     */
+    @SpeakeasyMetadata({ elemType: shared.FetchAllSavedInstruments })
+    classes?: shared.FetchAllSavedInstruments[];
 }

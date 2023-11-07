@@ -8,7 +8,7 @@ import { Expose } from "class-transformer";
 /**
  * TnC Type for the Offer. It can be either `text` or `link`
  */
-export enum OfferTncOfferTncType {
+export enum OfferTncType {
     Link = "link",
     Post = "post",
 }
@@ -19,7 +19,7 @@ export class OfferTnc extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "offer_tnc_type" })
-    offerTncType: OfferTncOfferTncType;
+    offerTncType: OfferTncType;
 
     /**
      * TnC for the Offer.

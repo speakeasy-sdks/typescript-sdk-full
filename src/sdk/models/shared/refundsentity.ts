@@ -10,19 +10,19 @@ import { Expose, Type } from "class-transformer";
 /**
  * Type of object
  */
-export enum RefundsEntityEntity {
+export enum Entity {
     Refund = "refund",
 }
 
 /**
  * Key-value pair that can be used to store additional information about the entity. Maximum 5 key-value pairs
  */
-export class RefundsEntityMetadata extends SpeakeasyBase {}
+export class Metadata extends SpeakeasyBase {}
 
 /**
  * Method or speed of processing refund
  */
-export enum RefundsEntityRefundMode {
+export enum RefundMode {
     Standard = "STANDARD",
     Instant = "INSTANT",
 }
@@ -30,7 +30,7 @@ export enum RefundsEntityRefundMode {
 /**
  * This can be one of ["SUCCESS", "PENDING", "CANCELLED", "ONHOLD", "FAILED"]
  */
-export enum RefundsEntityRefundStatus {
+export enum RefundStatus {
     Success = "SUCCESS",
     Pending = "PENDING",
     Cancelled = "CANCELLED",
@@ -40,7 +40,7 @@ export enum RefundsEntityRefundStatus {
 /**
  * This can be one of ["PAYMENT_AUTO_REFUND", "MERCHANT_INITIATED", "UNRECONCILED_AUTO_REFUND"]
  */
-export enum RefundsEntityRefundType {
+export enum RefundType {
     PaymentAutoRefund = "PAYMENT_AUTO_REFUND",
     MerchantInitiated = "MERCHANT_INITIATED",
     UnreconciledAutoRefund = "UNRECONCILED_AUTO_REFUND",
@@ -73,15 +73,15 @@ export class RefundsEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "entity" })
-    entity?: RefundsEntityEntity;
+    entity?: Entity;
 
     /**
      * Key-value pair that can be used to store additional information about the entity. Maximum 5 key-value pairs
      */
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => RefundsEntityMetadata)
-    metadata?: RefundsEntityMetadata;
+    @Type(() => Metadata)
+    metadata?: Metadata;
 
     /**
      * Merchant’s order Id of the order for which refund is initiated
@@ -137,7 +137,7 @@ export class RefundsEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "refund_mode" })
-    refundMode?: RefundsEntityRefundMode;
+    refundMode?: RefundMode;
 
     /**
      * Note added by merchant for the refund
@@ -161,14 +161,14 @@ export class RefundsEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "refund_status" })
-    refundStatus?: RefundsEntityRefundStatus;
+    refundStatus?: RefundStatus;
 
     /**
      * This can be one of ["PAYMENT_AUTO_REFUND", "MERCHANT_INITIATED", "UNRECONCILED_AUTO_REFUND"]
      */
     @SpeakeasyMetadata()
     @Expose({ name: "refund_type" })
-    refundType?: RefundsEntityRefundType;
+    refundType?: RefundType;
 
     /**
      * Description of refund status

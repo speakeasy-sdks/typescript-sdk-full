@@ -1,4 +1,4 @@
-# RefundsEntityRefundType
+# RefundType
 
 This can be one of ["PAYMENT_AUTO_REFUND", "MERCHANT_INITIATED", "UNRECONCILED_AUTO_REFUND"]
 

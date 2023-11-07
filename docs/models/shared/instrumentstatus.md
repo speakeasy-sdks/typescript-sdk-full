@@ -1,4 +1,4 @@
-# FetchAllSavedInstrumentsInstrumentStatus
+# InstrumentStatus
 
 Status of the saved instrument.
 

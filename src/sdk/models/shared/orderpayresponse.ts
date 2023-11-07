@@ -18,7 +18,7 @@ export enum OrderPayResponseAction {
 /**
  * One of ["link", "collect", "qrcode"]. In an older version we used to support different channels like 'gpay', 'phonepe' etc. However, we now support only the following channels - link, collect and qrcode. To process payments using gpay, you will have to provide channel as 'link' and provider as 'gpay'
  */
-export enum OrderPayResponseChannel {
+export enum Channel {
     Link = "link",
     Collect = "collect",
     Qrcode = "qrcode",
@@ -27,7 +27,7 @@ export enum OrderPayResponseChannel {
 /**
  * One of ["upi", "netbanking", "card", "app", "cardless_emi", "paylater"]
  */
-export enum OrderPayResponsePaymentMethod {
+export enum PaymentMethod {
     Netbanking = "netbanking",
     Card = "card",
     Upi = "upi",
@@ -56,7 +56,7 @@ export class OrderPayResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "channel" })
-    channel?: OrderPayResponseChannel;
+    channel?: Channel;
 
     @SpeakeasyMetadata()
     @Expose({ name: "data" })
@@ -68,5 +68,5 @@ export class OrderPayResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "payment_method" })
-    paymentMethod?: OrderPayResponsePaymentMethod;
+    paymentMethod?: PaymentMethod;
 }

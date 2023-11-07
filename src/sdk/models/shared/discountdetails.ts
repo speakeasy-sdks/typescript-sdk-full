@@ -8,7 +8,7 @@ import { Expose } from "class-transformer";
 /**
  * Type of discount
  */
-export enum DiscountDetailsDiscountType {
+export enum DiscountType {
     Flat = "flat",
     Percentage = "percentage",
 }
@@ -19,7 +19,7 @@ export class DiscountDetails extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "discount_type" })
-    discountType: DiscountDetailsDiscountType;
+    discountType: DiscountType;
 
     /**
      * Value of Discount.

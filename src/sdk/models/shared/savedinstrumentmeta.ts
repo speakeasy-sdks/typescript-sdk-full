@@ -5,7 +5,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Type } from "class-transformer";
 
-export class SavedInstrumentMetaCardTokenDetails extends SpeakeasyBase {}
+export class CardTokenDetails extends SpeakeasyBase {}
 
 export class SavedInstrumentMeta extends SpeakeasyBase {
     /**
@@ -31,8 +31,8 @@ export class SavedInstrumentMeta extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "card_token_details" })
-    @Type(() => SavedInstrumentMetaCardTokenDetails)
-    cardTokenDetails?: SavedInstrumentMetaCardTokenDetails;
+    @Type(() => CardTokenDetails)
+    cardTokenDetails?: CardTokenDetails;
 
     /**
      * Type of saved card

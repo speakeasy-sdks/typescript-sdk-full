@@ -5,7 +5,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Type } from "class-transformer";
 
-export class FetchPGReconRequestFilters extends SpeakeasyBase {
+export class Filters extends SpeakeasyBase {
     /**
      * Specify the end date till when you want the settlement reconciliation details.
      */
@@ -28,7 +28,7 @@ export class FetchPGReconRequestFilters extends SpeakeasyBase {
  *  To receive the data for the first time, pass the cursor as null.
  *  Limit would be number of settlements that you want to receive.
  */
-export class FetchPGReconRequestPagination extends SpeakeasyBase {
+export class Pagination extends SpeakeasyBase {
     /**
      * Specifies from where the next set of settlement details should be fetched.
      */
@@ -47,8 +47,8 @@ export class FetchPGReconRequestPagination extends SpeakeasyBase {
 export class FetchPGReconRequest extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "filters" })
-    @Type(() => FetchPGReconRequestFilters)
-    filters: FetchPGReconRequestFilters;
+    @Type(() => Filters)
+    filters: Filters;
 
     /**
      * To fetch the next set of settlements, pass the cursor received in the response to the next API call.
@@ -59,6 +59,6 @@ export class FetchPGReconRequest extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "pagination" })
-    @Type(() => FetchPGReconRequestPagination)
-    pagination: FetchPGReconRequestPagination;
+    @Type(() => Pagination)
+    pagination: Pagination;
 }

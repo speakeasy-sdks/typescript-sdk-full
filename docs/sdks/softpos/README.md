@@ -1,5 +1,5 @@
 # SoftPOS
-(*softPOS*)
+(*.softPOS*)
 
 ## Overview
 
@@ -30,6 +30,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -67,6 +68,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

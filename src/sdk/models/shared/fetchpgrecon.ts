@@ -5,7 +5,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Type } from "class-transformer";
 
-export class FetchPGReconData extends SpeakeasyBase {
+export class Data extends SpeakeasyBase {
     /**
      * Amount that is adjusted from the settlement amount because of any credit/debit event such as refund, refund_reverse etc.
      */
@@ -344,10 +344,10 @@ export class FetchPGRecon extends SpeakeasyBase {
     @Expose({ name: "cursor" })
     cursor?: string;
 
-    @SpeakeasyMetadata({ elemType: FetchPGReconData })
+    @SpeakeasyMetadata({ elemType: Data })
     @Expose({ name: "data" })
-    @Type(() => FetchPGReconData)
-    data?: FetchPGReconData[];
+    @Type(() => Data)
+    data?: Data[];
 
     /**
      * Number of settlements you want to fetch in the next iteration.

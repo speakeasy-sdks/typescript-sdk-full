@@ -1,4 +1,4 @@
-# PaymentsEntityPaymentStatus
+# PaymentStatus
 
 The transaction status can be one of  ["SUCCESS", "NOT_ATTEMPTED", "FAILED", "USER_DROPPED", "VOID", "CANCELLED", "PENDING"]
 

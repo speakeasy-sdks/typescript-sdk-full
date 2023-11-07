@@ -3,17 +3,15 @@
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { OTPRequestAction } from "PG-Latest/dist/sdk/models/shared";
 
 (async () => {
     const sdk = new PGLatest();
 
-    const res = await sdk.authentication.otpRequest({
-        otpRequest: {
-            action: OTPRequestAction.SubmitOtp,
-            otp: "string",
-        },
-        paymentId: "string",
+    const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
+        customerId: "string",
+        instrumentId: "string",
+        xClientId: "string",
+        xClientSecret: "string",
     });
 
     if (res.statusCode == 200) {

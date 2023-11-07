@@ -8,7 +8,7 @@ import { Expose } from "class-transformer";
 /**
  * Type of discount
  */
-export enum CashbackDetailsCashbackType {
+export enum CashbackType {
     Flat = "flat",
     Percentage = "percentage",
 }
@@ -19,7 +19,7 @@ export class CashbackDetails extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "cashback_type" })
-    cashbackType?: CashbackDetailsCashbackType;
+    cashbackType?: CashbackType;
 
     /**
      * Value of Discount.

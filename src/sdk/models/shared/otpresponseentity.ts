@@ -16,7 +16,7 @@ export enum OTPResponseEntityAction {
 /**
  * Status of the is action. Will be either failed or successful. If the action is successful, you should still call the authorization status to verify the final payment status.
  */
-export enum OTPResponseEntityAuthenticateStatus {
+export enum AuthenticateStatus {
     Failed = "FAILED",
     Success = "SUCCESS",
 }
@@ -37,7 +37,7 @@ export class OTPResponseEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "authenticate_status" })
-    authenticateStatus?: OTPResponseEntityAuthenticateStatus;
+    authenticateStatus?: AuthenticateStatus;
 
     /**
      * The payment id for which this request was sent

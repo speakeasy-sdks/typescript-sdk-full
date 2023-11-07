@@ -1,5 +1,5 @@
 # TokenVault
-(*tokenVault*)
+(*.tokenVault*)
 
 ## Overview
 
@@ -31,6 +31,7 @@ import { PGLatest } from "PG-Latest";
     xClientSecret: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -58,17 +59,18 @@ To get all saved instruments for a customer id
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import { FetchAllSavedInstrumentsInstrumentType } from "PG-Latest/dist/sdk/models/operations";
+import { InstrumentType } from "PG-Latest/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchAllSavedInstruments({
     customerId: "string",
-    instrumentType: FetchAllSavedInstrumentsInstrumentType.Card,
+    instrumentType: InstrumentType.Card,
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -108,6 +110,7 @@ import { PGLatest } from "PG-Latest";
     xClientSecret: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -145,6 +148,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

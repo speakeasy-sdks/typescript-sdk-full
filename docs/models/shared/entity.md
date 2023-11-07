@@ -1,4 +1,4 @@
-# RefundsEntityEntity
+# Entity
 
 Type of object
 

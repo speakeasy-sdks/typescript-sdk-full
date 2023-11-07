@@ -1,5 +1,5 @@
 # Authentication
-(*authentication*)
+(*.authentication*)
 
 ## Overview
 
@@ -29,6 +29,7 @@ import { OTPRequestAction } from "PG-Latest/dist/sdk/models/shared";
     },
     paymentId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

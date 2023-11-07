@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 export class GetPaymentLinkOrdersRequest extends SpeakeasyBase {
@@ -31,12 +31,6 @@ export class GetPaymentLinkOrdersResponse extends SpeakeasyBase {
     headers?: Record<string, string[]>;
 
     /**
-     * OK
-     */
-    @SpeakeasyMetadata({ elemType: shared.LinkOrdersResponse })
-    linkOrdersResponses?: shared.LinkOrdersResponse[];
-
-    /**
      * HTTP response status code for this operation
      */
     @SpeakeasyMetadata()
@@ -47,4 +41,10 @@ export class GetPaymentLinkOrdersResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * OK
+     */
+    @SpeakeasyMetadata({ elemType: shared.LinkOrdersResponse })
+    classes?: shared.LinkOrdersResponse[];
 }

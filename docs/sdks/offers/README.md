@@ -1,5 +1,5 @@
 # Offers
-(*offers*)
+(*.offers*)
 
 ### Available Operations
 
@@ -14,12 +14,7 @@ Use this API to create offers with Cashfree from your backend
 
 ```typescript
 import { PGLatest } from "PG-Latest";
-import {
-  CashbackDetailsCashbackType,
-  DiscountDetailsDiscountType,
-  OfferDetailsOfferType,
-  OfferTncOfferTncType,
-} from "PG-Latest/dist/sdk/models/shared";
+import { CashbackType, DiscountType, OfferDetailsOfferType, OfferTncType } from "PG-Latest/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new PGLatest();
@@ -31,7 +26,7 @@ import {
           maxCashbackAmount: "string",
         },
         discountDetails: {
-          discountType: DiscountDetailsDiscountType.Percentage,
+          discountType: DiscountType.Percentage,
           discountValue: "string",
           maxDiscountAmount: "string",
         },
@@ -45,7 +40,7 @@ import {
         offerTitle: "Test Offer",
       },
       offerTnc: {
-        offerTncType: OfferTncOfferTncType.Post,
+        offerTncType: OfferTncType.Post,
         offerTncValue: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       },
       offerValidations: {
@@ -57,6 +52,7 @@ import {
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -94,6 +90,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

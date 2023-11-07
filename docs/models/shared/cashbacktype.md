@@ -1,4 +1,4 @@
-# DiscountDetailsDiscountType
+# CashbackType
 
 Type of discount
 

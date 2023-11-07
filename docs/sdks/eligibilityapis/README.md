@@ -1,5 +1,5 @@
 # EligibilityAPIs
-(*eligibilityAPIs*)
+(*.eligibilityAPIs*)
 
 ### Available Operations
 
@@ -32,6 +32,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -81,6 +82,7 @@ import { OfferType } from "PG-Latest/dist/sdk/models/shared";
     xClientSecret: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -125,6 +127,7 @@ import { PGLatest } from "PG-Latest";
     xClientId: "string",
     xClientSecret: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

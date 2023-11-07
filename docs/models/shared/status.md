@@ -1,4 +1,4 @@
-# AuthorizationInPaymentsEntityStatus
+# Status
 
 One of SUCCESS or PENDING
 

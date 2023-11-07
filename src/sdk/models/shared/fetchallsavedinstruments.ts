@@ -9,7 +9,7 @@ import { Expose, Type } from "class-transformer";
 /**
  * Status of the saved instrument.
  */
-export enum FetchAllSavedInstrumentsInstrumentStatus {
+export enum InstrumentStatus {
     Active = "ACTIVE",
     Inactive = "INACTIVE",
 }
@@ -17,7 +17,7 @@ export enum FetchAllSavedInstrumentsInstrumentStatus {
 /**
  * Type of the saved instrument
  */
-export enum FetchAllSavedInstrumentsInstrumentType {
+export enum InstrumentType {
     Card = "card",
 }
 
@@ -67,14 +67,14 @@ export class FetchAllSavedInstruments extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "instrument_status" })
-    instrumentStatus?: FetchAllSavedInstrumentsInstrumentStatus;
+    instrumentStatus?: InstrumentStatus;
 
     /**
      * Type of the saved instrument
      */
     @SpeakeasyMetadata()
     @Expose({ name: "instrument_type" })
-    instrumentType?: FetchAllSavedInstrumentsInstrumentType;
+    instrumentType?: InstrumentType;
 
     /**
      * Unique id for the saved instrument

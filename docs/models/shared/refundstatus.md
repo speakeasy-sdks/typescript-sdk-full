@@ -1,4 +1,4 @@
-# RefundsEntityRefundStatus
+# RefundStatus
 
 This can be one of ["SUCCESS", "PENDING", "CANCELLED", "ONHOLD", "FAILED"]
 

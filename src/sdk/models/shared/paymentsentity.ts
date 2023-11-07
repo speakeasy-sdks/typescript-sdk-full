@@ -11,7 +11,7 @@ import { Expose, Type } from "class-transformer";
 /**
  * The transaction status can be one of  ["SUCCESS", "NOT_ATTEMPTED", "FAILED", "USER_DROPPED", "VOID", "CANCELLED", "PENDING"]
  */
-export enum PaymentsEntityPaymentStatus {
+export enum PaymentStatus {
     Success = "SUCCESS",
     NotAttempted = "NOT_ATTEMPTED",
     Failed = "FAILED",
@@ -105,7 +105,7 @@ export class PaymentsEntity extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "payment_status" })
-    paymentStatus?: PaymentsEntityPaymentStatus;
+    paymentStatus?: PaymentStatus;
 
     /**
      * This is the time when the payment was initiated

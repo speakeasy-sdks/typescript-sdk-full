@@ -1,4 +1,4 @@
-# OfferTncOfferTncType
+# OfferTncType
 
 TnC Type for the Offer. It can be either `text` or `link`
 

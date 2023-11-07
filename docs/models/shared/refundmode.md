@@ -1,4 +1,4 @@
-# RefundsEntityRefundMode
+# RefundMode
 
 Method or speed of processing refund
 

@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 export class EligibilityPaylaterRequest extends SpeakeasyBase {
@@ -27,12 +27,6 @@ export class EligibilityPaylaterResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     contentType: string;
 
-    /**
-     * OK
-     */
-    @SpeakeasyMetadata({ elemType: shared.EligiblePaylater })
-    eligiblePaylaters?: shared.EligiblePaylater[];
-
     @SpeakeasyMetadata()
     headers?: Record<string, string[]>;
 
@@ -47,4 +41,10 @@ export class EligibilityPaylaterResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * OK
+     */
+    @SpeakeasyMetadata({ elemType: shared.EligiblePaylater })
+    classes?: shared.EligiblePaylater[];
 }

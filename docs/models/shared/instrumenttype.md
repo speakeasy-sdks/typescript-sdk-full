@@ -1,4 +1,4 @@
-# FetchAllSavedInstrumentsInstrumentType
+# InstrumentType
 
 Type of the saved instrument
 
