@@ -38,7 +38,7 @@ export class TokenVault {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/customers/{customer_id}/instruments/{instrument_id}",
             req
@@ -54,7 +54,7 @@ export class TokenVault {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -129,7 +129,11 @@ export class TokenVault {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/customers/{customer_id}/instruments", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/customers/{customer_id}/instruments",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -142,7 +146,7 @@ export class TokenVault {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url + queryParams,
+            url: operationUrl + queryParams,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -220,7 +224,7 @@ export class TokenVault {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/customers/{customer_id}/instruments/{instrument_id}/cryptogram",
             req
@@ -236,7 +240,7 @@ export class TokenVault {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -307,7 +311,7 @@ export class TokenVault {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/customers/{customer_id}/instruments/{instrument_id}",
             req
@@ -323,7 +327,7 @@ export class TokenVault {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",

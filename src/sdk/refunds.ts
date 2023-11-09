@@ -34,7 +34,7 @@ export class Refunds {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/orders/{order_id}/refunds", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/orders/{order_id}/refunds", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -61,7 +61,7 @@ export class Refunds {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -136,7 +136,7 @@ export class Refunds {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/orders/{order_id}/refunds/{refund_id}",
             req
@@ -152,7 +152,7 @@ export class Refunds {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -226,7 +226,7 @@ export class Refunds {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/orders/{order_id}/refunds", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/orders/{order_id}/refunds", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -238,7 +238,7 @@ export class Refunds {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",

@@ -34,7 +34,7 @@ export class EligibilityAPIs {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/eligibility/cardlessemi";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/eligibility/cardlessemi";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -61,7 +61,7 @@ export class EligibilityAPIs {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -125,7 +125,7 @@ export class EligibilityAPIs {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/eligibility/offers";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/eligibility/offers";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -152,7 +152,7 @@ export class EligibilityAPIs {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -215,7 +215,7 @@ export class EligibilityAPIs {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/eligibility/paylater";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/eligibility/paylater";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -242,7 +242,7 @@ export class EligibilityAPIs {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

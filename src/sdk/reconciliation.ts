@@ -34,7 +34,7 @@ export class Reconciliation {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/recon";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/recon";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -61,7 +61,7 @@ export class Reconciliation {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -136,7 +136,7 @@ export class Reconciliation {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/settlement/recon";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/settlement/recon";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -163,7 +163,7 @@ export class Reconciliation {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

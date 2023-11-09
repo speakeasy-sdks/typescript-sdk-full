@@ -34,7 +34,7 @@ export class PaymentLinks {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/links/{link_id}/cancel", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/links/{link_id}/cancel", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -46,7 +46,7 @@ export class PaymentLinks {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -120,7 +120,7 @@ export class PaymentLinks {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/links";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/links";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -147,7 +147,7 @@ export class PaymentLinks {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -207,7 +207,7 @@ export class PaymentLinks {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/links/{link_id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/links/{link_id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -219,7 +219,7 @@ export class PaymentLinks {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -279,7 +279,7 @@ export class PaymentLinks {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/links/{link_id}/orders", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/links/{link_id}/orders", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -291,7 +291,7 @@ export class PaymentLinks {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",

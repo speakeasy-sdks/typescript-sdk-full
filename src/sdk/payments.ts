@@ -34,7 +34,7 @@ export class Payments {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/orders/{order_id}/payments/{cf_payment_id}",
             req
@@ -50,7 +50,7 @@ export class Payments {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -124,7 +124,7 @@ export class Payments {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/orders/{order_id}/payments", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/orders/{order_id}/payments", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -136,7 +136,7 @@ export class Payments {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",

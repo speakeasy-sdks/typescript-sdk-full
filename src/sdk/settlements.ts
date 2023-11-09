@@ -34,7 +34,11 @@ export class Settlements {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/orders/{order_id}/settlements", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/orders/{order_id}/settlements",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -46,7 +50,7 @@ export class Settlements {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -120,7 +124,7 @@ export class Settlements {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/settlements";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/settlements";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -147,7 +151,7 @@ export class Settlements {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

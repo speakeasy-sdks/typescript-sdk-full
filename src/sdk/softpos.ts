@@ -38,7 +38,7 @@ export class SoftPOS {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/terminal";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/terminal";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -65,7 +65,7 @@ export class SoftPOS {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -125,7 +125,11 @@ export class SoftPOS {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/terminal/{terminal_phone_no}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/terminal/{terminal_phone_no}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         const headers: RawAxiosRequestHeaders = {
             ...utils.getHeadersFromRequest(req),
@@ -137,7 +141,7 @@ export class SoftPOS {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
