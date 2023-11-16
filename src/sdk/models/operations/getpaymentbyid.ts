@@ -37,7 +37,7 @@ export class GetPaymentbyIdResponse extends SpeakeasyBase {
     errorResponse?: shared.ErrorResponse;
 
     @SpeakeasyMetadata()
-    headers?: Record<string, string[]>;
+    headers: Record<string, string[]>;
 
     /**
      * OK
@@ -55,5 +55,5 @@ export class GetPaymentbyIdResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 }

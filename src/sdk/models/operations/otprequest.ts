@@ -31,7 +31,7 @@ export class OTPRequestResponse extends SpeakeasyBase {
     errorResponse?: shared.ErrorResponse;
 
     @SpeakeasyMetadata()
-    headers?: Record<string, string[]>;
+    headers: Record<string, string[]>;
 
     /**
      * OK
@@ -49,5 +49,5 @@ export class OTPRequestResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 }

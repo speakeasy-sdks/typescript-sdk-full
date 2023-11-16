@@ -28,7 +28,7 @@ export class CancelPaymentLinkResponse extends SpeakeasyBase {
     contentType: string;
 
     @SpeakeasyMetadata()
-    headers?: Record<string, string[]>;
+    headers: Record<string, string[]>;
 
     /**
      * Cannot cancel Payment Link if status is not ACTIVE
@@ -52,5 +52,5 @@ export class CancelPaymentLinkResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 }

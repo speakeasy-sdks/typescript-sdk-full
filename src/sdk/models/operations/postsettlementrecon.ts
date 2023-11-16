@@ -40,7 +40,7 @@ export class PostSettlementReconResponse extends SpeakeasyBase {
     fetchSettlementRecon?: shared.FetchSettlementRecon;
 
     @SpeakeasyMetadata()
-    headers?: Record<string, string[]>;
+    headers: Record<string, string[]>;
 
     /**
      * HTTP response status code for this operation
@@ -52,5 +52,5 @@ export class PostSettlementReconResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 }
