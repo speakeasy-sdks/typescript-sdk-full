@@ -17,7 +17,7 @@ Use this API to initiate refunds.
 import { PGLatest } from "PG-Latest";
 import { CreateRefundRequestRefundSpeed } from "PG-Latest/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.createrefund({
@@ -36,7 +36,9 @@ import { CreateRefundRequestRefundSpeed } from "PG-Latest/dist/sdk/models/shared
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -65,7 +67,7 @@ Use this API to fetch a specific refund processed on your Cashfree Account.
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.getRefund({
@@ -78,7 +80,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -107,7 +111,7 @@ Use this API to fetch all refunds processed against an order.
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.getallrefundsfororder({
@@ -119,7 +123,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

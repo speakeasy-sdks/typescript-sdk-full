@@ -136,7 +136,6 @@ src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
 src/sdk/models/callbacks/index.ts
-USAGE.md
 docs/sdk/models/operations/deletespecificsavedinstrumentrequest.md
 docs/sdk/models/operations/deletespecificsavedinstrumentresponse.md
 docs/sdk/models/operations/instrumenttype.md
@@ -317,4 +316,5 @@ docs/sdks/refunds/README.md
 docs/sdks/settlements/README.md
 docs/sdks/reconciliation/README.md
 docs/sdks/softpos/README.md
+USAGE.md
 .gitattributes

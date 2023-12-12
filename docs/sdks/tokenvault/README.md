@@ -21,7 +21,7 @@ To delete a saved instrument for a customer id and instrument id
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
@@ -34,7 +34,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -64,7 +66,7 @@ To get all saved instruments for a customer id
 import { PGLatest } from "PG-Latest";
 import { InstrumentType } from "PG-Latest/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchAllSavedInstruments({
@@ -77,7 +79,9 @@ import { InstrumentType } from "PG-Latest/dist/sdk/models/operations";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -106,7 +110,7 @@ To get the card network token, token expiry and cryptogram for a saved instrumen
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchCryptogram({
@@ -119,7 +123,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -148,7 +154,7 @@ To get specific saved instrument for a customer id and instrument id
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchSpecificSavedInstrument({
@@ -161,7 +167,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

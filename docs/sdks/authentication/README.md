@@ -19,7 +19,7 @@ If you accept OTP on your own page, you can use the below API to send OTP to Cas
 import { PGLatest } from "PG-Latest";
 import { OTPRequestAction } from "PG-Latest/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.authentication.otpRequest({
@@ -33,7 +33,9 @@ import { OTPRequestAction } from "PG-Latest/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

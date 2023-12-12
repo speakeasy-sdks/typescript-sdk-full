@@ -15,7 +15,7 @@ Use this API to get the payment gateway reconciliation details with date range.
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.reconciliation.postRecon({
@@ -35,7 +35,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -64,7 +66,7 @@ Use this API to get settlement reconciliation details using Settlement ID, settl
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.reconciliation.postSettlementRecon({
@@ -88,7 +90,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

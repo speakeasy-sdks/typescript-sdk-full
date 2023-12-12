@@ -16,7 +16,7 @@ Use this API to get eligible Cardless EMI Payment Methods for a customer on an o
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.eligibilityAPIs.eligibilityCardlessEMI({
@@ -36,7 +36,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -66,7 +68,7 @@ Use this API to get eligible offers for an order or amount.
 import { PGLatest } from "PG-Latest";
 import { OfferType } from "PG-Latest/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.eligibilityAPIs.eligibilityOffer({
@@ -88,7 +90,9 @@ import { OfferType } from "PG-Latest/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -117,7 +121,7 @@ Use this API to get eligible Paylater Payment Methods for a customer on an order
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.eligibilityAPIs.eligibilityPaylater({
@@ -137,7 +141,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

@@ -1,8 +1,8 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async () => {
+async function run() {
     const sdk = new PGLatest();
 
     const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
@@ -15,7 +15,9 @@ import { PGLatest } from "PG-Latest";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

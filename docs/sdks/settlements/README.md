@@ -15,7 +15,7 @@ Use this API to view all the settlements of a particular order.
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.settlements.getsettlements({
@@ -27,7 +27,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -56,7 +58,7 @@ Use this API to get all settlement details by specifying the settlement ID, sett
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.settlements.postSettlements({
@@ -80,7 +82,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

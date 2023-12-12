@@ -16,7 +16,7 @@ Use this API to create offers with Cashfree from your backend
 import { PGLatest } from "PG-Latest";
 import { CashbackType, DiscountType, OfferDetailsOfferType, OfferTncType } from "PG-Latest/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.offers.createOffer({
@@ -56,7 +56,9 @@ import { CashbackType, DiscountType, OfferDetailsOfferType, OfferTncType } from 
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -85,7 +87,7 @@ Use this API to get offer by offer_id
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.offers.getOffer({
@@ -97,7 +99,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

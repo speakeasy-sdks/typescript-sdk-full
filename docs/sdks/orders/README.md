@@ -17,7 +17,7 @@ Use this API to create orders with Cashfree from your backend and get the paymen
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.orders.createOrder({
@@ -50,7 +50,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -79,7 +81,7 @@ Use this API to view all details of an order.
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.orders.getOrder({
@@ -91,7 +93,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -120,7 +124,7 @@ Use this API when you have already created the orders and want Cashfree to proce
 ```typescript
 import { PGLatest } from "PG-Latest";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.orders.orderPay({
@@ -135,7 +139,9 @@ import { PGLatest } from "PG-Latest";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -165,7 +171,7 @@ Use this API to capture or void a preauthorized payment
 import { PGLatest } from "PG-Latest";
 import { AuthorizationRequestAction } from "PG-Latest/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.orders.preauthorization({
@@ -178,7 +184,9 @@ import { AuthorizationRequestAction } from "PG-Latest/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
