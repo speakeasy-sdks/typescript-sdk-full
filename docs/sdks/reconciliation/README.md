@@ -21,11 +21,12 @@ async function run() {
   const res = await sdk.reconciliation.postRecon({
     fetchPGReconRequest: {
       filters: {
-        endDate: "string",
-        startDate: "string",
+        endDate: "2022-07-21T23:59:59Z",
+        startDate: "2022-07-20T00:00:00Z",
       },
       pagination: {
-        limit: 85382,
+        cursor: "eyJzZWFyY2hBZnRlciI6eyJsaXN0IjpbMTg4NjcxNDVdLCJlbXB0eSI6ZmFsc2V9LCJyZWNvbkFQSVR5cGUiOiJMRURHRVIifQ==",
+        limit: 10,
       },
     },
     xClientId: "string",
@@ -73,14 +74,18 @@ async function run() {
     fetchSettlementReconRequest: {
       filters: {
         cfSettlementIds: [
-          956121,
+          4234233,
         ],
+        endDate: "2022-07-21T23:59:59Z",
         settlementUtrs: [
-          "string",
+          "utr1",
+          "utr2",
         ],
+        startDate: "2022-07-20T00:00:00Z",
       },
       pagination: {
-        limit: 71166,
+        cursor: "eyJzZWFyY2hBZnRlciI6eyJsaXN0IjpbMTg4NjcxNDVdLCJlbXB0eSI6ZmFsc2V9LCJyZWNvbkFQSVR5cGUiOiJMRURHRVIifQ==",
+        limit: 10,
       },
     },
     xClientId: "string",

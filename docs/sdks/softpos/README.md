@@ -24,8 +24,9 @@ async function run() {
 
   const res = await sdk.softPOS.createTerminals({
     createTerminalRequest: {
-      terminalName: "string",
-      terminalPhoneNo: "string",
+      terminalId: "1",
+      terminalName: "Jane Doe",
+      terminalPhoneNo: "9876543210",
     },
     xClientId: "string",
     xClientSecret: "string",

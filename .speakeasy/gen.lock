@@ -4,15 +4,15 @@ management:
   docChecksum: 279157cb6e58c32a08b11d9e8f6f02be
   docVersion: "2022-09-01"
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 2.1.1
-  configChecksum: fc1c73c3c45f8206828d41fddf991b50
+  generationVersion: 2.253.0
+  releaseVersion: 2.1.2
+  configChecksum: 1405cdad570e482af69580884268dfed
   repoURL: https://github.com/speakeasy-sdks/typescript-sdk-full.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/typescript-sdk-full
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.6
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/sdk/tokenvault.ts

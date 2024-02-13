@@ -23,12 +23,14 @@ async function run() {
     createOfferBackendRequest: {
       offerDetails: {
         cashbackDetails: {
-          maxCashbackAmount: "string",
+          cashbackType: CashbackType.Percentage,
+          cashbackValue: "20",
+          maxCashbackAmount: "150",
         },
         discountDetails: {
-          discountType: DiscountType.Percentage,
-          discountValue: "string",
-          maxDiscountAmount: "string",
+          discountType: DiscountType.Flat,
+          discountValue: "10",
+          maxDiscountAmount: "10",
         },
         offerType: OfferDetailsOfferType.DiscountAndCashback,
       },

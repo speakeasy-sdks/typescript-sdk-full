@@ -22,10 +22,15 @@ async function run() {
 
   const res = await sdk.refunds.createrefund({
     createRefundRequest: {
-      refundAmount: 567.71,
-      refundId: "string",
+      refundAmount: 1,
+      refundId: "refund_00912",
+      refundNote: "refund note for reference",
+      refundSpeed: CreateRefundRequestRefundSpeed.Standard,
       refundSplits: [
-        {},
+        {
+          amount: 100.1,
+          vendorId: "Vendor01",
+        },
       ],
     },
     orderId: "string",
