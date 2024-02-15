@@ -48,11 +48,11 @@ async function run() {
       offerValidations: {
         maxAllowed: "10",
         minAmount: "1",
-        paymentMethod: "string",
+        paymentMethod: "<value>",
       },
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -93,9 +93,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.offers.getOffer({
-    offerId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    offerId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

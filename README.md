@@ -28,10 +28,10 @@ async function run() {
     const sdk = new PGLatest();
 
     const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
-        customerId: "string",
-        instrumentId: "string",
-        xClientId: "string",
-        xClientSecret: "string",
+        customerId: "<value>",
+        instrumentId: "<value>",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -136,10 +136,10 @@ async function run() {
     let res;
     try {
         res = await sdk.tokenVault.deleteSpecificSavedInstrument({
-            customerId: "string",
-            instrumentId: "string",
-            xClientId: "string",
-            xClientSecret: "string",
+            customerId: "<value>",
+            instrumentId: "<value>",
+            xClientId: "<value>",
+            xClientSecret: "<value>",
         });
     } catch (err) {
         if (err instanceof errors.SDKError) {
@@ -183,10 +183,10 @@ async function run() {
     });
 
     const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
-        customerId: "string",
-        instrumentId: "string",
-        xClientId: "string",
-        xClientSecret: "string",
+        customerId: "<value>",
+        instrumentId: "<value>",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -211,10 +211,10 @@ async function run() {
     });
 
     const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
-        customerId: "string",
-        instrumentId: "string",
-        xClientId: "string",
-        xClientSecret: "string",
+        customerId: "<value>",
+        instrumentId: "<value>",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {

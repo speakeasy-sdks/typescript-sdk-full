@@ -25,10 +25,10 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.deleteSpecificSavedInstrument({
-    customerId: "string",
-    instrumentId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    customerId: "<value>",
+    instrumentId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -70,10 +70,10 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchAllSavedInstruments({
-    customerId: "string",
+    customerId: "<value>",
     instrumentType: InstrumentType.Card,
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -114,10 +114,10 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchCryptogram({
-    customerId: "string",
-    instrumentId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    customerId: "<value>",
+    instrumentId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -158,10 +158,10 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.tokenVault.fetchSpecificSavedInstrument({
-    customerId: "string",
-    instrumentId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    customerId: "<value>",
+    instrumentId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

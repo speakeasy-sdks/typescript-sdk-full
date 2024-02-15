@@ -28,8 +28,8 @@ async function run() {
       terminalName: "Jane Doe",
       terminalPhoneNo: "9876543210",
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -70,9 +70,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.softPOS.getTerminalByMobileNumber({
-    terminalPhoneNo: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    terminalPhoneNo: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

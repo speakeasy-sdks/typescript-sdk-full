@@ -25,9 +25,9 @@ async function run() {
   const res = await sdk.authentication.otpRequest({
     otpRequest: {
       action: OTPRequestAction.SubmitOtp,
-      otp: "string",
+      otp: "<value>",
     },
-    paymentId: "string",
+    paymentId: "<value>",
   });
 
   if (res.statusCode == 200) {

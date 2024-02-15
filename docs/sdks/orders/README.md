@@ -45,7 +45,7 @@ async function run() {
         },
       ],
       orderTags: {
-        "key": "string",
+        "key": "<value>",
       },
       terminal: {
         terminalId: "1",
@@ -53,8 +53,8 @@ async function run() {
         terminalType: "SPOS",
       },
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -95,9 +95,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.orders.getOrder({
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -140,10 +140,10 @@ async function run() {
   const res = await sdk.orders.orderPay({
     orderPayRequest: {
       offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
-      paymentMethod: "string",
+      paymentMethod: "<value>",
       paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     },
-    xApiVersion: "string",
+    xApiVersion: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -189,9 +189,9 @@ async function run() {
       action: AuthorizationRequestAction.Capture,
       amount: 100,
     },
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

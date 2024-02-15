@@ -21,9 +21,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.paymentLinks.cancelPaymentLink({
-    linkId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    linkId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -66,7 +66,7 @@ async function run() {
   const res = await sdk.paymentLinks.createPaymentLink({
     createLinkRequest: {
       customerDetails: {
-        customerPhone: "string",
+        customerPhone: "<value>",
       },
       linkAmount: 100,
       linkAutoReminders: true,
@@ -82,8 +82,8 @@ async function run() {
       linkPartialPayments: true,
       linkPurpose: "Payment for PlayStation 11",
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -124,9 +124,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.paymentLinks.getPaymentLinkDetails({
-    linkId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    linkId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -167,9 +167,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.paymentLinks.getPaymentLinkOrders({
-    linkId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    linkId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

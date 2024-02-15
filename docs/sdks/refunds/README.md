@@ -33,9 +33,9 @@ async function run() {
         },
       ],
     },
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -76,10 +76,10 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.getRefund({
-    orderId: "string",
-    refundId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    refundId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -120,9 +120,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.refunds.getallrefundsfororder({
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

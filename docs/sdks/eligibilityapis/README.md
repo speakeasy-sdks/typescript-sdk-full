@@ -29,8 +29,8 @@ async function run() {
         orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -83,8 +83,8 @@ async function run() {
         orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -134,8 +134,8 @@ async function run() {
         orderId: "order_413462PK1RI1IwYB1X69LgzUQWiSxYDF",
       },
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

@@ -19,9 +19,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.settlements.getsettlements({
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -79,8 +79,8 @@ async function run() {
         limit: 10,
       },
     },
-    xClientId: "string",
-    xClientSecret: "string",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {

@@ -20,9 +20,9 @@ async function run() {
 
   const res = await sdk.payments.getPaymentbyId({
     cfPaymentId: 310675,
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -63,9 +63,9 @@ async function run() {
   const sdk = new PGLatest();
 
   const res = await sdk.payments.getPaymentsfororder({
-    orderId: "string",
-    xClientId: "string",
-    xClientSecret: "string",
+    orderId: "<value>",
+    xClientId: "<value>",
+    xClientSecret: "<value>",
   });
 
   if (res.statusCode == 200) {
