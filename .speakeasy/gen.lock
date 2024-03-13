@@ -3,10 +3,10 @@ id: 34cefce7-d656-43ab-bb46-ad0231c4100d
 management:
   docChecksum: 279157cb6e58c32a08b11d9e8f6f02be
   docVersion: "2022-09-01"
-  speakeasyVersion: internal
-  generationVersion: 2.275.4
-  releaseVersion: 2.2.0
-  configChecksum: 294bdd9a0110677f8670c446c17a3e07
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 2.2.1
+  configChecksum: c08951a2bba94a116c6618b60f49a751
   repoURL: https://github.com/speakeasy-sdks/typescript-sdk-full.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/typescript-sdk-full
@@ -14,7 +14,7 @@ features:
   typescript:
     callbacks: 1.0.0
     core: 3.4.8
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
 generatedFiles:
   - src/sdk/tokenvault.ts
   - src/sdk/eligibilityapis.ts

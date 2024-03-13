@@ -37,12 +37,6 @@ export class GetsettlementsResponse extends SpeakeasyBase {
     headers: Record<string, string[]>;
 
     /**
-     * OK
-     */
-    @SpeakeasyMetadata()
-    settlementsEntity?: shared.SettlementsEntity;
-
-    /**
      * HTTP response status code for this operation
      */
     @SpeakeasyMetadata()
@@ -53,4 +47,10 @@ export class GetsettlementsResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse: AxiosResponse;
+
+    /**
+     * OK
+     */
+    @SpeakeasyMetadata()
+    settlementsEntity?: shared.SettlementsEntity;
 }

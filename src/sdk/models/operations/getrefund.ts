@@ -43,12 +43,6 @@ export class GetRefundResponse extends SpeakeasyBase {
     headers: Record<string, string[]>;
 
     /**
-     * OK
-     */
-    @SpeakeasyMetadata()
-    refundsEntity?: shared.RefundsEntity;
-
-    /**
      * HTTP response status code for this operation
      */
     @SpeakeasyMetadata()
@@ -59,4 +53,10 @@ export class GetRefundResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse: AxiosResponse;
+
+    /**
+     * OK
+     */
+    @SpeakeasyMetadata()
+    refundsEntity?: shared.RefundsEntity;
 }
